@@ -418,30 +418,4 @@ a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#ca
 .foursixeight { margin: 0px 0px 15px 84px;}
 
 
-@media screen {
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('http://themes.googleusercontent.com/font?kit=YDAoLskQQ5MOAgvHUQCcLdXn3cHbFGWU4T2HrSN6JF4') format('truetype');
-}
-}
-@media screen {
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url('http://themes.googleusercontent.com/font?kit=We_iSDqttE3etzfdfhuPRf2R4S6PlKaGXWPfWpHpcl0') format('truetype');
-}
-}
-@media screen {
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Yanone Kaffeesatz Light'), local('YanoneKaffeesatz-Light'), url('http://themes.googleusercontent.com/font?kit=We_iSDqttE3etzfdfhuPRZlIwXPiNoNT_wxzJ2t3mTE') format('truetype');
-}
-}
-
-
 

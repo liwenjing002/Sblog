@@ -1,0 +1,41 @@
+<div id="signup_form"<%if !@signup%> class="hidden" <%end%>>
+  <% form_for @user, :url => { :action => "signup" }, :method => :post do |f| %>
+    <h1><%= "Sign-up Now" %></h1>
+
+    <div class="row clear">
+      <label for="user_login"><%= t("login_name")%>:</label>
+      <%= f.text_field :login_name%>*
+      <div class="clear"></div>
+    </div>
+
+    <div class="row clear">
+      <label for="user_login"> <%= t("email")%>:</label>
+      <%= f.text_field :email%>*
+      <div class="clear"></div>
+    </div>
+
+
+    <div class="row clear">
+      <label for="user_login"> <%= t("password")%>:</label>
+      <%= f.password_field :password %>*
+      <div class="clear"></div>
+    </div>
+
+
+    <div class="row clear">
+      <label for="user_login"><%= t("password_comfire")%>:</label>
+      <%= f.password_field :password_comfire%>*
+      <div class="clear"></div>
+    </div>
+
+    <div class="row clear">
+      <label for="user_login"> <%= t("alias_name")%>:</label>
+      <%= f.text_field :alias_name%>
+      <div class="clear"></div>
+    </div>
+
+    <div class="button">
+      <%= f.submit t('Sign-up Now'), :class=>'button' %>
+    </div>
+  <% end %>
+</div>

@@ -6,6 +6,26 @@
 <script type="text/javascript">
   //<![CDATA[
 
+ //<![CDATA[
+  jQuery(function show_forget() {
+
+    tog("#forgot_password_clicker", "#login_form");
+    tog("#forgot_password_clicker", "#forgot_form", forgot_text);
+
+    tog("#signup_clicker", "#login");
+    tog("#signup_clicker", "#signup_form", signup_text);
+
+  });
+  function forgot_text(){
+
+  }
+
+  function signup_text(){
+
+  }
+  //]]>
+
+
   Cufon.replace('ul#primary-menu a strong',
   {textShadow:'1px 1px 1px #000',
     hover: { textShadow: '1px 1px 1px #000' }})('ul#primary-menu ul a',

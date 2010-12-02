@@ -1,0 +1,18 @@
+<div id="plain_wrapper">
+  <div class="pad2">
+      <%= get_flash('errorExplanation') %>
+    <%= error_messages_for 'user'%>
+    <div class="instruction">
+      <%= link_to t("Oops, I need an account!"), "javascript:void(0)" ,:class => "a2",:id=>"signup_clicker" %>
+    </div>
+
+    <!-- 导入登录form -->
+    <%= render(:partial => "user/login_form") %>
+
+    <!-- 导入注册form -->
+    <%= render(:partial => "user/signup_form") %>
+
+
+    <div class="clear"></div>
+  </div>
+</div>

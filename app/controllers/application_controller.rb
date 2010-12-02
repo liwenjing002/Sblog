@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  before_filter :set_locale
+  before_filter :set_locale,:is_login
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
@@ -21,5 +21,29 @@ class ApplicationController < ActionController::Base
     flash.now[:notice] = "#{I18n.locale} translation not available"
     I18n.load_path -= [locale_path]
     I18n.locale = session[:locale] = I18n.default_locale
+  end
+
+  def redirect_back_or_default default
+    if session[:return_to] &&
+        session[:return_to] != "/home" &&
+        session[:return_to] != "#{request.request_uri}" &&
+        !session[:return_to].include?( request.path)
+      redirect_to(session[:return_to])
+      session[:return_to] = nil
+      return
+    else
+      redirect_to(default)
+      return
+    end
+  end
+
+  def is_login
+    if session[:is_login]==nil &&request.request_uri!= "/user/login"&&
+        request.parameters[:controller] != "home" && session[:return_to] != "/"&&
+        request.parameters[:controller] !='user'&&
+        request.parameters[:action]!= "connect_us"
+      session[:return_to] = request.request_uri
+      redirect_to :controller=>"user",:action=>"login"
+    end
   end
 end

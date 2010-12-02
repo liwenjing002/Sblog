@@ -1,0 +1,40 @@
+<% form_for @user, :url => { :action => "login" }, :method => :post do |f| %>
+  <div id="login" <%if @signup%> class="hidden" <%end%>>
+    <div id="login_form" >
+      <h1><%= t 'Log-in your Account' %></h1>
+      <div class="row clear">
+        <label for="user_login"> <%= t("login_name")%>:</label>
+        <%= f.text_field :login_name%>
+        <div class="clear"></div>
+      </div>
+      <div class="row clear">
+        <label for="user_login"> <%= t("password")%>:</label>
+        <%= f.password_field :password,:label => t("password") %>
+        <div class="clear"></div>
+      </div>
+      <div class="button">
+        <%= f.submit t('Log-in Now'), :class=>'button' %>
+      </div>
+    </div>
+
+    <div id="forgot_form" class="hidden">
+      <h1><%= t 'Retrieve My Password' %></h1>
+      <div class="instruction"><%= t 'Enter email address and your password will be sent to you' %></div>
+      <p>
+        <%=t("Enter Email Address")%>:
+        <%= f.text_field :email %>
+      </p>
+      <div class="button">
+        <%= f.submit t('Retrieve Password'), :class => 'button' %>
+      </div>
+    </div>
+    <div class="instruction">
+      <span>
+        <%= t "I forgot my password" %>
+        <a href="javascript:void(0)" id="forgot_password_clicker" style="display: inline;" class ="a2" >
+          <%= t "password" %>
+        </a>
+      </span>
+    </div>
+  </div>
+<% end %>
