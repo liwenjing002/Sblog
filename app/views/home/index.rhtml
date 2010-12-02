@@ -1,0 +1,16 @@
+<div id="main-shadow">
+  <div id="top-shadow"></div>
+  <div class="container clearfix">
+    <div id="main-area">
+
+    <!-- 加载二级分类导航 -->
+    <%= render(:partial => "home/main_tabs") %>
+
+    <!-- 加载加载博客列表 -->
+    <%= render(:partial => "home/main_content") %>
+    </div> 
+
+    <!-- 加载右部工具栏 -->
+     <%= render(:partial => "home/siderbar_right") %>
+  </div> <!-- end .container -->
+</div> 	<!-- end #right-shadow -->

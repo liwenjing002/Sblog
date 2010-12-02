@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://www.elegantthemes.com/preview/AskIt/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Askit Theme | Just another WordPress site</title>
+    <%= stylesheet_link_tag 'style'%>
+  </head>
+  <body id="home">
+
+    <!-- 加载顶部导航链接 -->
+    <%= render(:partial => "layouts/header_inner") %>
+
+    <!-- 加载分类导航按钮 -->
+    <%= render(:partial => "layouts/header_content") %>
+
+    <div id="content">
+      <%= @content_for_layout %>
+    </div> 
+
+    <!-- 加载foot部分网页 -->
+    <%= render(:partial => "layouts/foot_content") %>
+
+    <!-- 加载js-->
+    <%= render(:partial => "layouts/load_js") %>
+  </body>
+</html>

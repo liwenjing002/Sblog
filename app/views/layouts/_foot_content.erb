@@ -1,0 +1,43 @@
+ <div id="footer">
+<div id="footer-content">
+  <div class="container clearfix">
+    <div id="linkcat-2" class="footer-widget widget_links">
+      <h4 class="widgettitle">Blogroll</h4>
+      <ul class="xoxo blogroll">
+        <li><a href="http://codex.wordpress.org/">Documentation</a></li>
+      </ul>
+    </div> <!-- end .footer-widget -->
+    <div id="meta-2" class="footer-widget widget_meta">
+      <h4 class="widgettitle">Meta</h4>
+      <ul>
+        <li><a href="http://www.elegantthemes.com/preview/AskIt/wp-login.php?action=register">Register</a></li>
+      </ul>
+    </div> <!-- end .footer-widget -->		 <!-- end .footer-widget -->
+     <div id="language" class="footer-widget widget_meta">
+      <h4 class="widgettitle"><%= t 'choose_language' %></h4>
+      <ul>
+        <li> <% form_tag '', :method => 'GET' do %>
+              <%= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale),
+                :onchange => 'this.form.submit()' %>
+            <% end %></li>
+      </ul>
+    </div> <!-- end .footer-widget -->		 <!-- end .footer-widget -->
+    <div class="clear"></div> <!-- end .footer-widget -->			</div> <!-- end .container -->
+
+  <div id="footer-bottom">
+    <div class="container clearfix">
+      <ul id="footer-menu" class="bottom-nav">
+        <li class="cat-item cat-item-6"><a href="http://www.elegantthemes.com/preview/AskIt/?cat=6" title="View all posts filed under Web Development">Web Development</a>
+        </li>
+        <li class="cat-item cat-item-9"><a href="http://www.elegantthemes.com/preview/AskIt/?cat=9" title="View all posts filed under WordPress">WordPress</a>
+        </li>
+      </ul> <!-- end ul#nav -->
+      <p id="copyright">Designed by
+        <a href="http://www.elegantthemes.com/" title="Elegant Themes">Elegant Themes</a>
+					| Powered by
+        <a href="http://www.wordpress.org/">WordPress</a>
+      </p>
+    </div> <!-- end .container -->
+  </div> <!-- end #footer-bottom -->
+</div> <!-- end #footer-content -->
+</div>

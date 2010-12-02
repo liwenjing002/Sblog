@@ -1,0 +1,41 @@
+<%= javascript_include_tag 'jquery'%>
+<%= javascript_include_tag 'superfish'%>
+<%= javascript_include_tag 'cufon-yui'%>
+<%= javascript_include_tag 'League_Gothic_400.font'%>
+
+<script type="text/javascript">
+  //<![CDATA[
+
+  Cufon.replace('ul#primary-menu a strong',
+  {textShadow:'1px 1px 1px #000',
+    hover: { textShadow: '1px 1px 1px #000' }})('ul#primary-menu ul a',
+  {textShadow:'1px 1px 1px #000'});
+
+  jQuery('ul.nav').superfish({
+    delay:       200,                            // one second delay on mouseout
+    animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
+    speed:       'fast',                          // faster animation speed
+    autoArrows:  true,                           // disable generation of arrow mark-up
+    dropShadows: false                            // disable drop shadows
+  });
+
+
+
+  et_search_bar();
+
+
+  <!---- Search Bar Improvements ---->
+  function et_search_bar(){
+    var $searchform = jQuery('#header-bottom div#search-bar'),
+    $searchinput = $searchform.find("input#searchinput"),
+    searchvalue = $searchinput.val();
+
+    $searchinput.focus(function(){
+      if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+    }).blur(function(){
+      if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+    });
+  };
+
+  //]]>
+</script>
