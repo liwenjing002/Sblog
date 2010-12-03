@@ -1,19 +1,31 @@
-<div id="plain_wrapper">
-  <div class="pad2">
-      <%= get_flash('errorExplanation') %>
-    <%= error_messages_for 'user'%>
-    <div class="instruction">
-      <%= link_to t("Oops, I need an account!"), "javascript:void(0)" ,:class => "a2",:id=>"signup_clicker" %>
-    </div>
+<%#= render(:partial => "share/siderbar_right") %>
 
-    <!-- 导入登录form -->
-    <%= render(:partial => "user/login_form") %>
+<div id="main-area">
 
-    <!-- 导入注册form -->
-    <%= render(:partial => "user/signup_form") %>
+  <!-- 加载二级分类导航 -->
+  <div class="entry page">
+    <div class="entry-top">
+      <div class="entry-content">
+        <h2 class="title"><%=t "login"%>/<%= link_to t("Oops, I need an account!"), "javascript:void(0)" ,:class => "a2",:id=>"signup_clicker" %></h2>
+        <div class="clear"></div>
 
+        <div class="page-separator"></div>
+        <div class="post-content">
+          <div id="create_new_post">
+            <!-- 导入登录form -->
+            <%= render(:partial => "user/login_form") %>
 
-    <div class="clear"></div>
+            <!-- 导入注册form -->
+            <%= render(:partial => "user/signup_form") %>
+          </div> <!-- end #create_new_post -->
+          <div class="clear"></div>
+        </div>
+      </div> <!-- end .entry-content -->
+    </div> <!-- end .entry-top -->
   </div>
+
 </div>
-<div style="height:200px;"></div>
+
+<!-- 加载右部工具栏 -->
+<%= render(:partial => "share/siderbar_right") %>
+

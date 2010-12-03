@@ -1,41 +1,41 @@
 <div id="signup_form"<%if !@signup%> class="hidden" <%end%>>
   <% form_for @user, :url => { :action => "signup" }, :method => :post do |f| %>
-    <h1><%= "Sign-up Now" %></h1>
+     <p class="clearfix">
+      <label for="et_newpost_title" class="inputlable"><%= t("login_name")%>:</label>
+      <%= f.text_field :login_name,:class=>"input"%> <small>*</small>
+      <%= error_div(@user, :login_name)%>
+     </p>
 
-    <div class="row clear">
-      <label for="user_login"><%= t("login_name")%>:</label>
-      <%= f.text_field :login_name%>*
-      <div class="clear"></div>
-    </div>
+    <p class="clearfix">
+      <label for="et_newpost_title" class="inputlable"><%= t("email")%>:</label>
+      <%= f.text_field :email,:class=>"input"%>
+       <%= error_div(@user, :email)%>
+      <small>*</small>
+    </p>
 
-    <div class="row clear">
-      <label for="user_login"> <%= t("email")%>:</label>
-      <%= f.text_field :email%>*
-      <div class="clear"></div>
-    </div>
-
-
-    <div class="row clear">
-      <label for="user_login"> <%= t("password")%>:</label>
-      <%= f.password_field :password %>*
-      <div class="clear"></div>
-    </div>
+    <p class="clearfix">
+      <label for="et_newpost_tags" class="inputlable"><%= t("password")%>:</label>
+      <%= f.password_field :password,:label => t("password"),:class=>"input" %>
+      <small>*</small>
+       <%= error_div(@user, :password)%>
+    </p>
 
 
-    <div class="row clear">
-      <label for="user_login"><%= t("password_comfire")%>:</label>
-      <%= f.password_field :password_comfire%>*
-      <div class="clear"></div>
-    </div>
+    <p class="clearfix">
+      <label for="et_newpost_tags" class="inputlable"><%= t("password_comfire")%>:</label>
+      <%= f.password_field :password_comfire,:label => t("password_comfire"),:class=>"input" %>
+      <small>*</small>
+       <%= error_div(@user, :password_comfire)%>
+    </p>
 
-    <div class="row clear">
-      <label for="user_login"> <%= t("alias_name")%>:</label>
-      <%= f.text_field :alias_name%>
-      <div class="clear"></div>
-    </div>
+    <p class="clearfix">
+      <label for="et_newpost_title" class="inputlable"><%= t("alias_name")%>:</label>
+      <%= f.text_field :alias_name,:class=>"input"%>
+      <small>*</small>
+       <%= error_div(@user, :alias_name)%>
+    </p>
 
-    <div class="button">
-      <%= f.submit t('Sign-up Now'), :class=>'button' %>
-    </div>
+    <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
+     <input  class="register" type="reset" value="<%=t "reset"%>" id="reset"/>
   <% end %>
 </div>

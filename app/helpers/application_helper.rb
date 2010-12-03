@@ -40,4 +40,15 @@ module ApplicationHelper
     href_class = "menu-item menu-item-type-custom "
     href_class +="current-menu-item current_page_item menu-item-home" if href == self.controller.action_name
   end
+
+  def error_div(model, field)
+    return unless model
+    field = field.is_a?(Symbol) ? field.to_s : field
+    errors = model.errors[field]
+    return unless errors
+     error_list = []
+    errors.each{ | msg| error_list << content_tag("li", msg) }
+     content_tag("div", content_tag("ul", error_list), "id" =>  "errorExplanation", \
+          "class" =>  "errorExplanation" )
+  end  
 end

@@ -51,6 +51,12 @@ body {
     color: #424242; }
 
 a { text-decoration: none; color: #00b7f3;font-size: 20px; }
+#signup_clicker{color: #00B7F3;
+     display: inline;
+     font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+     font-size: 36px;
+     font-weight: lighter;
+     padding-left: 20px;}
 a:hover { text-decoration: underline; }
 .clear { clear: both; }
 .ui-tabs-hide { display: none; }
@@ -85,7 +91,7 @@ textarea { padding: 4px; }
 
 img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
-.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix:after { padding-bottom: 10px; line-height: 18px; visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
@@ -428,6 +434,7 @@ a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#ca
 
 .foursixeight { margin: 0px 0px 15px 84px;}
 #fill_blank{height:400px;}
+.errorExplanation{color: red; font-size: 10px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif;}
 
 
 

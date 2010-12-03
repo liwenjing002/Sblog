@@ -1,22 +1,21 @@
-<% form_for @user, :url => { :action => "login" }, :method => :post do |f| %>
-  <div id="login" <%if @signup%> class="hidden" <%end%>>
-    <div id="login_form" >
-      <h1><%= t 'Log-in your Account' %></h1>
-      <div class="row clear">
-        <label for="user_login"> <%= t("login_name")%>:</label>
-        <%= f.text_field :login_name%>
-        <div class="clear"></div>
-      </div>
-      <div class="row clear">
-        <label for="user_login"> <%= t("password")%>:</label>
-        <%= f.password_field :password,:label => t("password") %>
-        <div class="clear"></div>
-      </div>
-      <div class="button">
-        <%= f.submit t('Log-in Now'), :class=>'button' %>
-      </div>
-    </div>
 
+<% form_for @user, :url => { :action => "login" }, :method => :post do |f| %>
+  <div id="login" <%if @signup%> class="hidden" <%end%> >
+    <div id="login_form" >
+      <%= error_div(@user, :login_name)%>
+      <p class="clearfix">
+        <label for="et_newpost_title" class="inputlable"><%= t("login_name")%>:</label>
+        <%= f.text_field :login_name,:class=>"input"%>
+        <small>*</small>
+      </p>
+      <p class="clearfix">
+        <label for="et_newpost_tags" class="inputlable"><%= t("password")%>:</label>
+        <%= f.password_field :password,:label => t("password"),:class=>"input" %>
+        <small>*</small>
+      </p>
+      <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
+      <input  class="register" type="reset" value="<%=t "reset"%>" id="reset"/>
+    </div>
     <div id="forgot_form" class="hidden">
       <h1><%= t 'Retrieve My Password' %></h1>
       <div class="instruction"><%= t 'Enter email address and your password will be sent to you' %></div>
@@ -31,10 +30,10 @@
     <div class="instruction">
       <span>
         <%= t "I forgot my password" %>
-        <a href="javascript:void(0)" id="forgot_password_clicker" style="display: inline;" class ="a2" >
+        <a href="javascript:void(0)" id="forgot_password_clicker" style="display: inline;"  >
           <%= t "password" %>
         </a>
       </span>
     </div>
   </div>
-<% end %>
+<% end -%>
