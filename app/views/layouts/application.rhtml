@@ -9,9 +9,9 @@
     <%= stylesheet_link_tag 'style'%>
     <%= stylesheet_link_tag 'css'%>
     <%= stylesheet_link_tag 'main'%>
-     <%= javascript_include_tag 'jquery'%>
+    <%= javascript_include_tag 'jquery'%>
     <%= javascript_include_tag 'application'%>
-     <%= javascript_include_tag 'truncator'%>
+    <%= javascript_include_tag 'truncator'%>
   </head>
   <body id="home">
 
@@ -22,8 +22,13 @@
     <%= render(:partial => "layouts/header_content") %>
 
     <div id="content">
-      <%= @content_for_layout %>
-    </div> 
+      <div id="right-shadow">
+        <div id="top-shadow"></div>
+        <div class="container clearfix">
+          <%= @content_for_layout %>
+        </div>
+      </div> <!-- end .container -->
+    </div> 	<!-- end #right-shadow -->
 
     <!-- 加载foot部分网页 -->
     <%= render(:partial => "layouts/foot_content") %>
