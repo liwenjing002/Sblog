@@ -30206,3 +30206,237 @@ ActionController::RoutingError (No route matches "/images/textarea-bg.png" with 
   C:/Ruby187/bin/rdebug-ide:19
 
 Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 17:04:30) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing AboutController#contact (for 127.0.0.1 at 2010-12-03 17:04:37) [GET]
+Rendering template within layouts/application
+Rendering about/contact
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 281ms (View: 47, DB: 0) | 200 OK [http://localhost/about/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:04:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 17:06:20) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing AboutController#contact (for 127.0.0.1 at 2010-12-03 17:07:25) [GET]
+Rendering template within layouts/application
+Rendering about/contact
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 47, DB: 0) | 200 OK [http://localhost/about/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:07:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 17:08:29) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing AboutController#contact (for 127.0.0.1 at 2010-12-03 17:10:37) [GET]
+Rendering template within layouts/application
+Rendering about/contact
+Rendered share/_web_map_tabs (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 188ms (View: 47, DB: 0) | 200 OK [http://localhost/about/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:10:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 17:12:05) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing AboutController#contact (for 127.0.0.1 at 2010-12-03 17:13:08) [GET]
+Rendering template within layouts/application
+Rendering about/contact
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 188ms (View: 47, DB: 0) | 200 OK [http://localhost/about/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:13:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-03 17:13:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/textarea-bg.png" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
