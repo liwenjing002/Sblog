@@ -1,0 +1,11 @@
+development:
+  adapter: sqlite3
+  database: db/FunnyThing_development
+test:
+  adapter: sqlite3
+  database: FunnyThing_test
+
+production:
+  adapter: sqlite3
+  database: db/FunnyThing_production
+
