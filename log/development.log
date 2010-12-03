@@ -32469,3 +32469,54 @@ Rendered layouts/_header_content (0.0ms)
 Rendered layouts/_foot_content (2.0ms)
 Rendered layouts/_load_js (4.0ms)
 Completed in 364ms (View: 39, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-03 23:28:55) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (10.0ms)
+Rendered share/_siderbar_right (1.0ms)
+Rendered layouts/_header_inner (1.0ms)
+Rendered layouts/_header_content (1.0ms)
+Rendered layouts/_foot_content (2.0ms)
+Rendered layouts/_load_js (3.0ms)
+Completed in 159ms (View: 65, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 23:29:38) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (7.0ms)
+Rendered user/_signup_form (6.0ms)
+Rendered share/_siderbar_right (1.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (1.0ms)
+Rendered layouts/_foot_content (2.0ms)
+Rendered layouts/_load_js (5.0ms)
+Completed in 148ms (View: 44, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 23:30:22) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (14.0ms)
+Rendered user/_signup_form (6.0ms)
+Rendered share/_siderbar_right (1.0ms)
+Rendered layouts/_header_inner (1.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (1.0ms)
+Rendered layouts/_load_js (11.0ms)
+Completed in 226ms (View: 71, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 23:30:51) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (16.0ms)
+Rendered user/_signup_form (7.0ms)
+Rendered share/_siderbar_right (2.0ms)
+Rendered layouts/_header_inner (1.0ms)
+Rendered layouts/_header_content (1.0ms)
+Rendered layouts/_foot_content (2.0ms)
+Rendered layouts/_load_js (6.0ms)
+Completed in 405ms (View: 73, DB: 0) | 200 OK [http://localhost/user/login]

@@ -25,9 +25,7 @@
         <%= f.text_field :email,:label => t("email"),:class=>"input" %>
         <small>*</small>
       </p>
-      <div class="button">
-        <%= f.submit t('Retrieve Password'), :class => 'button' %>
-      </div>
+      <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
     </div>
     <div class="instruction">
       <span>
