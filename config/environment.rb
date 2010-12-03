@@ -22,7 +22,7 @@ ActionMailer::Base.smtp_settings = {
   :user_name => "liwenjingabc@gmail.com",
   :password => "19881228"
 }
-if defined?(Footnotes)
-    Footnotes::Filter.prefix = 'txmt://open?url=file://%s&amp;amp;line=%d&amp;amp;column=%d'
-  end
+#if defined?(Footnotes)
+#    Footnotes::Filter.prefix = 'txmt://open?url=file://%s&amp;amp;line=%d&amp;amp;column=%d'
+#  end
 
