@@ -29088,3 +29088,333 @@ C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
 C:/Ruby187/bin/rdebug-ide:19:in `load'
 C:/Ruby187/bin/rdebug-ide:19
 Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 15:58:43) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 766ms (View: 500, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 15:58:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 594ms (View: 297, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 15:59:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (62.5ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 516ms (View: 297, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-12-03 16:00:20) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 156ms (View: 31, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:03:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (125.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 812ms (View: 578, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:03:53) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 547ms (View: 391, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:04:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 266ms (View: 47, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:06:10) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 297ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:10:41) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:10:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:11:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 312ms (View: 47, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-03 16:11:14) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 688ms (View: 375, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:11:36) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 328ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:12:02) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:12:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:12:19) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 391ms (View: 109, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:14:24) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 281ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:14:43) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (31.2ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 391ms (View: 109, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:15:19) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:17:39) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 312ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:18:08) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 406ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:19:01) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-03 16:19:24) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 375ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:19:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-03 16:19:44) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-03 16:24:08) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (78.1ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 719ms (View: 484, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-03 16:33:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (109.4ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 797ms (View: 547, DB: 0) | 200 OK [http://localhost/]
