@@ -1,0 +1,53 @@
+<div id="main-area">
+
+  <!-- 加载二级分类导航 -->
+  <%= render(:partial => "share/web_map_tabs") %>
+
+  <!-- 加载加载博客列表 -->
+  <div class="entry page">
+    <div class="entry-top">
+      <div class="entry-content">
+        <h2 class="title"><%=t "leave message"%></h2>
+        <div class="clear"></div>
+
+        <div class="page-separator"></div>
+
+        <div class="post-content">
+
+
+
+
+          <div id="create_new_post">
+            <% form_tag(:action =>"contact") do %>
+              <p class="clearfix">
+                <label for="et_newpost_title" class="inputlable"><%= t  "title"%>:</label>
+                 <%= text_field 'email', 'subject',:class=>"input" %>
+               <small>*</small>
+              </p>
+
+              <p class="clearfix">
+                <label for="et_newpost_tags" class="inputlable"><%= t "you_email" %>:</label>
+                <%= text_field 'email', 'recipients',:class=>"input" %>
+                <small>*</small>
+              </p>
+
+
+              <p class="clearfix">
+                <label for="et_newpost_content" class="inputlable"><%= t "content" %>:</label>
+                 <%= text_area 'email', 'message' ,:class=>"input" %>
+              </p>
+              
+              <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
+              <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
+          <% end -%>
+          </div> <!-- end #create_new_post -->
+
+          <div class="clear"></div>
+        </div>
+      </div> <!-- end .entry-content -->
+    </div> <!-- end .entry-top -->
+  </div>
+</div>
+
+<!-- 加载右部工具栏 -->
+<%= render(:partial => "share/siderbar_right") %>
