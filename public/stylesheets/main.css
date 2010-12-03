@@ -1,142 +1,4 @@
-@charset "ISO-8859-1";
-* {
-    margin: 0px;
-    padding: 0px;
-}
-body {
 
-    background-color: #f5f5f2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 20px;
-    color: #555555;
-}
-.head {
-    background-color: #383838;
-    background-repeat: repeat-x;
-}
-.head #nav {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    list-style-type: none;
-    height: 105px;
-}
-#nav li {
-    float: left;
-    padding-left: 5px;
-    margin-top: 36px;
-    background-image: none;
-}
-#nav li a {
-    color: #CDCDCD;
-    text-decoration: none;
-    font-size: 15px;
-    padding-right: 20px;
-    padding-left: 15px;
-    float: left;
-    padding-top: 6px;
-    padding-bottom: 7px;
-}
-#nav li a:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-#nav  li#logo {
-    float: left;
-    padding: 0px 125px 0px 0px;
-    margin: 0px;
-}
-
-.footer a {
-    color: #FFFFFF;
-}
-.footer p {
-    margin: 0px;
-    padding: 0px;
-    font-size: 14px;
-    color: #888888;
-}
-.footer p strong {
-    color: #FFFFFF;
-    font-weight: normal;
-}
-.footer  h3 {
-    color: #888888;
-    border-bottom-color: #444444;
-}
-.footer .flickr_stream a {
-    margin-right: 1px;
-    border: 1px solid #323232;
-    float: left;
-    text-decoration: none;
-    display: block;
-}
-.footer .flickr_stream a:hover {
-    border-top-color: #888888;
-    border-right-color: #888888;
-    border-bottom-color: #888888;
-    border-left-color: #888888;
-    text-decoration: none;
-}
-.flickr_stream {
-    width: 640px;
-    float: left;
-    clear:left;
-}
-.foot_foot {
-    clear: both;
-    float: left;
-    width: 960px;
-    padding-top: 45px;
-    padding-bottom: 15px;
-    color: #777777;
-    font-size: 12px;
-}
-
-.col960 {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    clear: both;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-a img {
-    border-top-style: none;
-    border-right-style: none;
-    border-bottom-style: none;
-    border-left-style: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.clear {
-    clear: both;
-}
-.last {
-    margin-right: 0px!important;
-}
-.red {
-    color: #990000;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.formtable td {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    vertical-align: top;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #EBEBE8;
-}
 .inputfield {
     background-image: none;
     background-color: #FFFFFF;
@@ -153,111 +15,12 @@ a:hover {
     background-repeat: no-repeat;
     background-position: left -46px;
 }
-.overline {
-    padding-top: 10px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #D5D5D5;
-    margin-top: 25px;
-}
+
 
 h1 {
     position: absolute;
     left: -8989px;
 }
-h2 {
-    margin-bottom: 20px;
-    margin-top: 45px;
-}
-h3 {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #333333;
-    text-transform: uppercase;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #BEBEAF;
-    padding-bottom: 1px;
-    margin-bottom: 12px;
-    margin-top: 0px;
-}
-h4 {
-    font-size: 15px;
-    color: #333333;
-    line-height: 20px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    padding-top: 5px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #D5D5D5;
-    margin-top: 20px;
-}
-h5 {
-    font-size: 16px;
-    line-height: 23px;
-    font-weight: normal;
-    padding-bottom: 15px;
-}
-.header {
-    margin: 0px;
-    padding: 50px 0px 30px;
-    float: left;
-    width: 960px;
-    clear: both;
-}
-.header img {
-    float: left;
-}
-.header .sub_nav {
-    float: right;
-    width: 500px;
-}
-
-.header .sub_nav li:hover {
-    background-repeat: no-repeat;
-    background-position: left -32px;
-}
-
-.header .sub_nav li a:hover {
-    background-repeat: no-repeat;
-    background-position: right -32px;
-    color: #333333;
-    text-decoration: none;
-}
-
-
-
-p {
-    margin-bottom: 5px;
-}
-.intro p {
-    font-size: 14px;
-    line-height: 22px;
-}
-
-a.shad {
-
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    padding: 0px 0px 5px;
-    float: right;
-    border-bottom-style: none;
-}
-a.shad:hover {
-    border-bottom-style: none;
-}
-
-p.button {
-    background-repeat: no-repeat;
-    background-position: left top;
-    float: left;
-    margin: 5px 0px 0px;
-    padding: 0px 0px 25px 8px;
-}
-
-
 
 
 #newsletter form {
@@ -284,47 +47,10 @@ p.button {
 }
 
 
-h2 {
-    clear: both;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #03491E;
-    margin: 0px 0px 15px;
-    padding: 5px 0px 0px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: normal;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #DDD7CC;
-}
-
-.right_col {
-    float: right;
-    width: 270px;
-}
 
 
-.work {
-    width: 960px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #E8E8E8;
-    padding-top: 10px;
-    margin-top: 10px;
-    clear: both;
-}
-#home em {
-    font-size: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 23px;
-    color: #333333;
-}
-em {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #333333;
-}
-a               { font-size: 20px;  text-decoration: none; color: #03491E; }
-a:hover         {text-decoration: underline; } 
+
+
 p.thirteen {
     font-size: 13px;
     line-height: 18px;
@@ -353,89 +79,7 @@ p.link a:hover {
     padding-top: 5px;
 }
 
-a.golf_club_port {
-    float: left;
-    width: 304px;
-    color: #888888;
-    margin-right: 24px;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #F5F5F2;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
 
-}
-
-a.golf_club_port img {
-    margin-bottom: 10px;
-    padding: 2px;
-    background-color: #FFFFFF;
-}
-a.golf_club_port:hover, a.golf_club_port img:hover {
-    text-decoration: none;
-    background-color: #ebebe8!important;
-}
-a.golf_club_port strong {
-    color: #333333;
-    text-transform: uppercase;
-    font-weight: normal;
-}
-.photography_wrap {
-    clear: left;
-    float: left;
-    width: 960px;
-    margin-bottom: 35px;
-    padding-top: 15px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #D9D9D9;
-}
-.photography_wrap .p_title {
-    float: left;
-    width: 135px;
-    color: #888888;
-    font-size: 11px;
-}
-.photography_wrap .p_title strong {
-    font-weight: normal;
-    color: #444444;
-    font-size: 13px;
-}
-.photography_wrap .p_thumbs {
-    float: right;
-    width: 795px;
-}
-.photography_wrap .p_thumbs a {
-    float: left;
-    margin-right: 5px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: #F5F5F2;
-    border-bottom-color: #F5F5F2;
-    margin-bottom: 3px;
-}
-.photography_wrap .p_thumbs a:hover {
-    border-top-color: #555555;
-    border-bottom-color: #555555;
-}
-
-
-.tab_on a:hover, .tab_off a:hover {
-    text-decoration: none;
-}
-
-.pointer {
-    cursor: pointer;
-}
-:-moz-any-link:focus {
-    outline: none;
-}
 #login_form,
 #forgot_form		{padding: 5px 0 25px 0;}
 .comment		{padding: 0 0 5px 0; margin: 3px 0 5px 0;}
@@ -451,22 +95,6 @@ textarea,
 .row select		{float: left; width: 220px; padding: 2px;}
 .row textarea	{height: 200px;}
 input.button	{background: #666; color: #ddd; font-weight: bold; font-size: 10px; width: auto; height: auto; padding: 5px;}
-input.button:hover	{background: #2ab769; }
+input.button:hover	{background: #00B7F3; }
 div.button		{ border-top: 1px dotted #666; padding: 10px; height: 25px; margin-top: 15px;}
-h1				{font-size: 28px;  letter-spacing: -1.2pt; color: white; font-weight: bold; margin: 25px 0 20px 0;}
 
-form h2			{margin: 30px 0 10px 0; border-bottom: 1px dotted #666; padding-bottom: 7px; clear: both;}
-h3				{font-size: 13px; margin-bottom: 10px;}
-.instruction	{padding: 5px; font-weight: bold;}
-#plain_wrapper 	{ margin: 0px auto; padding: 0px; background-color: #EBEBE8 no-repeat;}
-.pad2           {margin: 30px;}
-input {vertical-align:middle;}
-.notice {
-    margin: 0px;
-    padding: 20px 0px 20px;
-    float: left;
-    width: 960px;
-    clear: both;
-    font-size: 25px;
-    color: #03491E;
-}

@@ -34,4 +34,10 @@ module ApplicationHelper
       end
     end
   end
+
+
+  def head_inner_class(href)
+    href_class = "menu-item menu-item-type-custom "
+    href_class +="current-menu-item current_page_item menu-item-home" if href == self.controller.action_name
+  end
 end

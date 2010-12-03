@@ -7,7 +7,7 @@ class UserController < ApplicationController
       return redirect_to :action=>"forget_password",:email=> @user.email
     end
     if @user.login(session)
-      flash[:notice] = "Hello! #{@user.alias_name||@user.login_name},"+ I18n.t('welcome_word')
+#      flash[:notice] = "Hello! #{@user.alias_name||@user.login_name},"+ I18n.t('welcome_word')
       return redirect_back_or_default('/home')
 
     end

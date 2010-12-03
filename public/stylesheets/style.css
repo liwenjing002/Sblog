@@ -45,9 +45,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 /*-----------------[BASIC STYLES]-----------------*/
 /*------------------------------------------------*/
 
-body { line-height: 18px; font-family: Arial, Verdana, sans-serif; font-size: 12px; color: #424242; }
+body {
+    line-height: 20px;
+    font-family: Arial, Verdana, sans-serif; font-size: 14px;
+    color: #424242; }
 
-a { text-decoration: none; color: #00b7f3; }
+a { text-decoration: none; color: #00b7f3;font-size: 20px; }
 a:hover { text-decoration: underline; }
 .clear { clear: both; }
 .ui-tabs-hide { display: none; }
@@ -129,6 +132,8 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 							span.quote {background: url(/images/bottom-quote.png) no-repeat; width: 14px; display: inline-block; height:24px; margin-left:2px; }
 							span.author, span.author a { color: #c6c6c6; font-family: Georgia, serif; font-size: 14px; font-style: italic; }
 								span.author a:hover { color: #000000; text-decoration: none; }
+                                                                div.author, div.author a { padding-left: 20px;color: #c6c6c6; font-family: Georgia, serif; font-size: 14px; font-style: italic; }
+								div.author a:hover { color: #000000; text-decoration: none; }
 	div.tags { position: absolute; bottom: 15px; right: 80px; }
 		div.tags a { background: url(/images/tag-bg.png) no-repeat top left; display: block; height: 28px; padding-left: 16px; float: left; font-size: 14px; color: #777676; font-family: Georgia; font-style: italic; text-shadow: 1px 1px 1px #fff; line-height: 23px; margin-right: 8px; }
 			div.tags a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
@@ -149,7 +154,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 		.post-content ol, .comment-content ol { list-style-type: decimal; list-style-position: inside; padding: 10px 0px 10px 2px; }
 			.post-content ul li ul, .post-content ul li ol, .comment-content ul li ul, .comment-content ul li ol { padding: 2px 0px 2px 20px; }
 			.post-content ol li ul, .post-content ol li ol, .comment-content ol li ul, .comment-content ol li ol  { padding: 2px 0px 2px 35px; }
-			
+	#post-content p {font-size:14px; line-height:23px; text-indent:2em;}
 	.page-separator { height: 1px; background: url(/images/post-meta-topbg.png) repeat-x; margin:25px -27px -3px -30px; }
 	
 	.fullwidth { width: 960px !important; }
@@ -161,11 +166,11 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 	.input { background: #f6f6f6 url(/images/textarea-bg.png) repeat-x !important; border: 1px solid #d4d2d2 !important; border-radius: 8px  !important; -webkit-border-radius: 8px !important; -moz-border-radius: 8px !important; color: #303030 !important; padding: 7px !important; margin: 0px !important; }
 	
 	input.input { width: 300px; }
-	textarea.input { width: 478px; height:130px; }
+	textarea.input { width: 400px; height:130px; }
 	div.title { margin-bottom: 10px; }
-	.inputlable, #register-form label { color: #303030; font-size: 20px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; float:left; width:80px; padding-top: 5px; }
+	.inputlable, #register-form label { color: #303030; font-size: 20px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; float:left; width:120px; padding-top: 5px; }
 	
-	input.register, #register-form input#wp-submit { background: url(/images/submit_bg.png) no-repeat !important; border: none !important; float: right; width: 67px; font-size: 18px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; color: #fff; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding: 3px 0px 7px; }
+	input.register, #register-form input#wp-submit { background: url(/images/submit_bg.png) no-repeat !important; border: none !important;  width: 67px; font-size: 18px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; color: #fff; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding: 3px 0px 7px; }
 	#register-form input#wp-submit { margin-top:-15px; }
 	
 	#register-form .login-remember label { font-size: 12px; font-family: Arial, sans-serif; width: 150px; }
@@ -196,7 +201,13 @@ font-family:'Yanone Kaffeesatz',Arial,sans-serif; font-size:12px; height:21px; l
 			
 	#call_to_action { background:url(/images/button-bg.png) no-repeat; height: 59px; width: 228px; display:block; margin-left: 10px; text-decoration: none; }
 		#call_to_action span { font-size:29px; color: #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding-left: 17px; line-height: 50px; }
-		
+
+        #call_to_action_left { background:url(/images/button-bg.png) no-repeat; height: 59px; width: 114px;  margin-left: 10px; text-decoration: none; }
+        #call_to_action_left span { font-size:29px; color: #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding-left: 17px; line-height: 50px; }
+
+        #call_to_action_right { background:url(/images/button-bg.png) no-repeat; height: 59px; width: 114px; margin-left: 10px; text-decoration: none; }
+		#call_to_action_right span { font-size:29px; color: #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px rgba(0,0,0,0.3); padding-left: 17px; line-height: 50px; }
+
 	.widget-button { padding-bottom: 7px; }
 	
 /*------------------------------------------------*/
@@ -303,7 +314,7 @@ h3#comments { font-family: 'Yanone Kaffeesatz', Arial, sans-serif; font-size: 30
 	.depth-5 p#right_answer_set { margin-left: 224px; }
 	
 	.et_right_answer > .comment > .comment-body > .avatar-box > .comment-date { color: #47631f; }
-	.et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner span.fn, .et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner span.fn a, .et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner .comment-author, ..et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner .comment-content { color:#437300; }
+	.et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner span.fn, .et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner span.fn a, .et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner .comment-author, .et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner .comment-content { color:#437300; }
 	.et_right_answer > .comment-body > .comment-wrap > .comment-wrap-inner .reply-container a { color: #437300; }
 	
 	.et_like_dislike_box { background: url(/images/like-box.png) no-repeat; width: 131px; height: 63px; padding: 8px 10px 0px 30px; position: absolute; top: 0px; left: 61px; visibility: hidden; }
@@ -416,6 +427,7 @@ a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#ca
 .js #feat-content, .js div#from-blog div.entries {display: none;} 
 
 .foursixeight { margin: 0px 0px 15px 84px;}
+
 
 
 
