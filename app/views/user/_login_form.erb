@@ -19,9 +19,11 @@
     <div id="forgot_form" class="hidden">
       <h1><%= t 'Retrieve My Password' %></h1>
       <div class="instruction"><%= t 'Enter email address and your password will be sent to you' %></div>
-      <p>
-        <%=t("Enter Email Address")%>:
-        <%= f.text_field :email %>
+      <br/>
+      <p class="clearfix">
+        <label for="et_newpost_tags" class="inputlable"><%= t("Enter Email Address")%>:</label>
+        <%= f.text_field :email,:label => t("email"),:class=>"input" %>
+        <small>*</small>
       </p>
       <div class="button">
         <%= f.submit t('Retrieve Password'), :class => 'button' %>

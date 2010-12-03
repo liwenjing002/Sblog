@@ -47,10 +47,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body {
     line-height: 20px;
-    font-family: Arial, Verdana, sans-serif; font-size: 14px;
+    font-family: Arial, Verdana, sans-serif; font-size: 12px;
     color: #424242; }
 
-a { text-decoration: none; color: #00b7f3;font-size: 20px; }
+a { text-decoration: none; color: #00b7f3}
 #signup_clicker{color: #00B7F3;
      display: inline;
      font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
@@ -435,7 +435,7 @@ a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#ca
 .foursixeight { margin: 0px 0px 15px 84px;}
 #fill_blank{height:400px;}
 .errorExplanation{color: red; font-size: 10px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif;}
-
+.instruction    { color:#505050; font-size: 20px; text-shadow: 1px 1px 1px #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; }
 
 
 
