@@ -1,13 +1,14 @@
 class UserController < ApplicationController
 
   def login
-    @user = User.new(params[:user])
+    @user_login = User.new(params[:user])
+    @user = User.new()
     return unless request.post?
-    if @user.email&& @user.email!= ''
-      return redirect_to :action=>"forget_password",:email=> @user.email
+    if @user_login.email&& @user_login.email!= ''
+      return redirect_to :action=>"forget_password",:email=> @user_login.email
     end
-    if @user.login(session)
-      flash[:notice] = "Hello! #{@user.alias_name||@user.login_name},"+ I18n.t('welcome_word')
+    if @user_login.login(session)
+      flash[:notice] = "Hello! #{@user_login.alias_name||@user_login.login_name},"+ I18n.t('welcome_word')
       return redirect_back_or_default('/home')
     end
   end
@@ -20,6 +21,7 @@ class UserController < ApplicationController
   def signup
     redirect_to :action=>"login" if !request.post?
     @user = User.new(params[:user])
+     @user_login = User.new()
     if @user.save
       session[:is_login] = true
       session[:login_name] = @user.login_name

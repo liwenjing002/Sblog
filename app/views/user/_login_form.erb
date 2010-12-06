@@ -1,8 +1,8 @@
 
-<% form_for @user, :url => { :action => "login" }, :method => :post do |f| %>
+<% form_for @user_login, :url => { :action => "login" }, :method => :post do |f| %>
   <div id="login" <%if @signup%> class="hidden" <%end%> >
     <div id="login_form" >
-      <%= error_div(@user, :login_name)%>
+      <%= error_div(@user_login, :login_name)%>
       <p class="clearfix">
         <label for="et_newpost_title" class="inputlable"><%= t("login_name")%>:</label>
         <%= f.text_field :login_name,:class=>"input"%>
