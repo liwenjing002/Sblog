@@ -1,0 +1,16 @@
+##博客分类
+type:
+  - value: 'life'
+  - value: 'arts'
+  - value: 'technology'
+    children:
+      - value: 'computer'
+      - value: 'Digital'
+      - value: 'Industry'
+ #查看博客方法，随机，最新，最热门之类
+wap:
+  - value: 'recent'
+  - value: 'popular'
+  - value: 'unreply'
+  - value: 'random'
+

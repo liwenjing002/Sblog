@@ -33163,3 +33163,3240 @@ Rendered layouts/_header_content (0.0ms)
 Rendered layouts/_foot_content (1.0ms)
 Rendered layouts/_load_js (4.0ms)
 Completed in 485ms (View: 55, DB: 1) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:26:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (78.1ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 562ms (View: 312, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:26:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:30:33) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 438ms (View: 172, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:30:40) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:37:21) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:40:14) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:40:49) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+ERROR: compiling _run_erb_app47views47layouts47_header_inner46erb_locals_header_inner_object RAISED compile error
+F:/opensource/perfectblog/app/views/layouts/_header_inner.erb:4: syntax error, unexpected ')'
+...ogo'), :controller => 'home',).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_header_inner46erb_locals_header_inner_object(local_assigns)
+            old_output_buffer = output_buffer;header_inner = local_assigns[:header_inner];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"header\">\n  <div id=\"header-inner\">\n    <div class=\"container\">\n      "
+
+
+; @output_buffer.concat(( link_to image_tag("logo.png",:alt => "S blog logo",:id=>'logo'), :controller => 'home',).to_s); @output_buffer.concat "\n\n\n      <ul id=\"primary-menu\" class=\"nav sf-js-enabled\">\n        <li id=\"menu-item-57\" class='"
+
+
+
+; @output_buffer.concat(( head_inner_class("index") ).to_s); @output_buffer.concat "'>\n          <a href=\"/home\">\n            <strong><cufon class=\"cufon cufon-canvas\" alt=\"Home\" style=\"width: 38px; height: 24px; \"><canvas width=\"52\" height=\"30\" style=\"width: 52px; height: 30px; top: -5px; left: -1px; \"></canvas><cufontext>Home</cufontext></cufon>\n            </strong>\n            <span>\344\270\273\351\241\265</span>\n          </a>\n        </li>\n        <li id=\"menu-item-50\" class='"
+
+
+
+
+
+
+; @output_buffer.concat(( head_inner_class("msg") ).to_s); @output_buffer.concat "'>\n          <a href=\"/about/msg\">\n            <strong><cufon class=\"cufon cufon-canvas\" alt=\"About\" style=\"width: 44px; height: 24px; \"><canvas width=\"58\" height=\"30\" style=\"width: 58px; height: 30px; top: -5px; left: -1px; \"></canvas><cufontext>About</cufontext></cufon>\n            </strong>\n            <span>\345\205\263\344\272\216</span>\n          </a>\n        </li>\n        <li id=\"menu-item-56\" class='"
+
+
+
+
+
+
+; @output_buffer.concat(( head_inner_class("contact") ).to_s); @output_buffer.concat "'>\n          <a href=\"/about/contact\">\n            <strong><cufon class=\"cufon cufon-canvas\" alt=\"contact me\" style=\"width: 51px; height: 24px; \"><canvas width=\"65\" height=\"30\" style=\"width: 65px; height: 30px; top: -5px; left: -1px; \"></canvas><cufontext>connect us</cufontext></cufon>\n            </strong>\n            <span>\350\201\224\347\263\273\346\210\221</span>\n          </a>\n        </li>\n      </ul>\n                </div> <!-- end .container -->\n  </div> <!-- end #header-inner -->\n</div>"
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: F:/opensource/perfectblog/app/views/layouts/_header_inner.erb:35:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+F:/opensource/perfectblog/app/views/layouts/application.rhtml:19:in `_run_rhtml_app47views47layouts47application46rhtml'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+F:/opensource/perfectblog/app/views/layouts/_header_inner.erb:4: syntax error, unexpected ')'
+...ogo'), :controller => 'home',).to_s); @output_buffer.concat ...
+                              ^) on line #4 of app/views/layouts/_header_inner.erb:
+1: <div id="header">
+2:   <div id="header-inner">
+3:     <div class="container">
+4:       <%= link_to image_tag("logo.png",:alt => "S blog logo",:id=>'logo'), :controller => 'home',%>
+5: 
+6: 
+7:       <ul id="primary-menu" class="nav sf-js-enabled">
+
+    app/views/layouts/_header_inner.erb:35:in `compile!'
+    app/views/layouts/application.rhtml:19:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:41:03) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:41:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (93.8ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 297ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:41:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:49:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:52:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+
+ActionView::TemplateError (undefined method `/' for "<span> t('login')+":String) on line #7 of app/views/share/_siderbar_right.erb:
+4:        <% if !is_login -%>
+5:       <div class="widget-button">
+6:       
+7:         <%= link_to "<span> t('login')+"/"+t('register') </span>",:controller=>user,:action=>login,:id=>"call_to_action"%>
+8:       </div>
+9:       <%else%>
+10:        
+
+    app/views/share/_siderbar_right.erb:7
+    app/views/home/index.rhtml:12:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:53:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+
+ActionView::TemplateError (undefined local variable or method `user' for #<ActionView::Base:0x5e2ee50>) on line #7 of app/views/share/_siderbar_right.erb:
+4:        <% if !is_login -%>
+5:       <div class="widget-button">
+6:       
+7:         <%= link_to "<span> #{t('login')}/#{t('register')} </span>",:controller=>user,:action=>login,:id=>"call_to_action"%>
+8:       </div>
+9:       <%else%>
+10:        
+
+    app/views/share/_siderbar_right.erb:7
+    app/views/home/index.rhtml:12:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:53:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:55:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:55:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:57:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:58:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:58:27) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 09:58:34) [POST]
+  Parameters: {"user"=>{"login_name"=>"lee456", "password"=>"123456", "email"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_name" = 'lee456' AND "users"."password" = '7c4a8d09ca3762af61e59520943dc26494f8941b') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:58:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 31, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-12-07 09:58:38) [GET]
+Redirected to http://localhost:3000/home
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 09:58:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 31, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:01:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 31, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:01:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:01:38) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:01:41) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 281ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:06:30) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:08:14) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:09:01) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 188ms (View: 31, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:09:39) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:09:48) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 203ms (View: 31, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:11:17) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (46.9ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 516ms (View: 281, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:13:28) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 297ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:14:02) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 1922ms (View: 31, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:14:26) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 188ms (View: 47, DB: 0) | 200 OK [http://localhost/home?locale=zh]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:16:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:25:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (156.2ms)
+Rendered share/_siderbar_right (140.6ms)
+Rendered layouts/_header_inner (62.5ms)
+Rendered layouts/_header_content (46.9ms)
+Rendered layouts/_foot_content (31.2ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 3828ms (View: 672, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:28:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:31:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 187ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:42:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 281ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:45:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:48:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 187ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:49:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 281ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 10:50:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:15:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (78.1ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (88450.3ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 89185ms (View: 88966, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:23:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (78.1ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (27811.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 28468ms (View: 28218, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:28:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (undefined method `value' for {"value"=>"life"}:Hash) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4:   <ul id="secondary-menu" class="nav clearfix sf-js-enabled">
+5:     <li id="menu-item-62" class="menu-item menu-item-type-taxonomy menu-item-62">
+6:       <%=  link_to t('life'),'#',:onclick=>'alert("功能未完成")'%>
+
+    app/helpers/application_helper.rb:64:in `head_content'
+    app/helpers/application_helper.rb:62:in `each'
+    app/helpers/application_helper.rb:62:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:21:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:28:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (undefined method `value' for {"value"=>"life"}:Hash) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4:   <ul id="secondary-menu" class="nav clearfix sf-js-enabled">
+5:     <li id="menu-item-62" class="menu-item menu-item-type-taxonomy menu-item-62">
+6:       <%=  link_to t('life'),'#',:onclick=>'alert("功能未完成")'%>
+
+    app/helpers/application_helper.rb:64:in `head_content'
+    app/helpers/application_helper.rb:62:in `each'
+    app/helpers/application_helper.rb:62:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:21:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (218.7ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:29:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (4921.7ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 5203ms (View: 5015, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:30:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (26280.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 26515ms (View: 26343, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:31:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (5078.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 5390ms (View: 5140, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:31:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:31:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:34:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:34:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 11:35:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:15:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:15:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (13874.7ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 14187ms (View: 13937, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:15:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (227011.3ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 227339ms (View: 227089, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:19:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (47233.5ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 47593ms (View: 47296, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:20:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4: 
+5:   <div id="search-bar">
+6:     <form method="get" id="searchform" action="http://www.elegantthemes.com/preview/AskIt">
+
+    app/helpers/application_helper.rb:65:in `get_li_list'
+    app/helpers/application_helper.rb:67:in `get_li_list'
+    app/helpers/application_helper.rb:65:in `each'
+    app/helpers/application_helper.rb:65:in `get_li_list'
+    app/helpers/application_helper.rb:59:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:21:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:21:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15609.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 15890ms (View: 15703, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:22:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (34983.9ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 35281ms (View: 35046, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:22:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (2046.8ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 2344ms (View: 2094, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:23:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (93.7ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (46.9ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (52718.1ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 53077ms (View: 52890, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:24:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (30687.1ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 30921ms (View: 30750, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:24:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 375ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:24:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (93.7ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 328ms (View: 156, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:24:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 297ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:25:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (3625.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 3953ms (View: 3687, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:25:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (46.9ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (19843.5ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 20093ms (View: 19906, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:25:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:25:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (64092.9ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 64468ms (View: 64155, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:27:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (35249.5ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 35484ms (View: 35312, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:32:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:32:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 375ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:34:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:35:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 266ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-07 12:36:18) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 375ms (View: 109, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 12:36:20) [GET]
+
+ActionController::RoutingError (No route matches "/about/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:47:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:51:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:54:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:56:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:56:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:57:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 250ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:58:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 12:58:51) [POST]
+  Parameters: {"type"=>"life"}
+
+ActionController::RoutingError (No route matches "/blog/list" with {:method=>:post}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:59:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (78.1ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 766ms (View: 484, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BlogController#list (for 127.0.0.1 at 2010-12-07 12:59:39) [POST]
+  Parameters: {"type"=>"life"}
+Redirected to http://localhost:3000/user/login
+Filter chain halted as [:is_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/blog/list?type=life]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 12:59:39) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (31.2ms)
+Rendered user/_signup_form (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 250ms (View: 203, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 12:59:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 516ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BlogController#list (for 127.0.0.1 at 2010-12-07 13:00:18) [POST]
+  Parameters: {"type"=>"life"}
+Redirected to http://localhost:3000/user/login
+Filter chain halted as [:is_login] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/blog/list?type=life]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 13:00:18) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:01:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 312ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:01:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:07:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (27202.8ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 27500ms (View: 27265, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:08:20) [GET]
+  Parameters: {"type"=>""}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:09:01) [GET]
+  Parameters: {"type"=>""}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (2750.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 2969ms (View: 2797, DB: 0) | 200 OK [http://localhost/home?type=]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:09:13) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (13593.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 13953ms (View: 13625, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:10:47) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 47, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:10:52) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:11:07) [GET]
+  Parameters: {"type"=>"computer"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 297ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=computer]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:11:56) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:11:59) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-12-07 13:25:34) [GET]
+Redirected to http://localhost:3000/user/login
+Filter chain halted as [:is_login] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/blog]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 13:25:34) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 297ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 13:25:36) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:31:17) [GET]
+  Parameters: {"type"=>"life"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (31.2ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 437ms (View: 94, DB: 0) | 200 OK [http://localhost/home?type=life]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-07 13:31:21) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 250ms (View: 94, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 13:31:22) [GET]
+
+ActionController::RoutingError (No route matches "/about/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:31:38) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (0.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 219ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:46:51) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (109.4ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 719ms (View: 437, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:47:24) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (93.7ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 156, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:47:47) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:48:00) [POST]
+  Parameters: {"wap"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/?wap=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:48:05) [POST]
+  Parameters: {"wap"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/?wap=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:48:11) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:48:45) [POST]
+  Parameters: {"wap"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/?wap=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:49:49) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:50:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (109.4ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 828ms (View: 500, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:51:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (19999.9ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 20328ms (View: 20047, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:51:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (9562.4ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (14624.9ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 24406ms (View: 24234, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:52:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (2390.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (1812.5ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 4422ms (View: 4219, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:52:43) [GET]
+  Parameters: {"type"=>"life"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (4640.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (2843.7ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 7719ms (View: 7531, DB: 0) | 200 OK [http://localhost/home?type=life]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:57:02) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 297ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 13:59:01) [POST]
+  Parameters: {"wap"=>"popular"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/?wap=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:00:55) [POST]
+  Parameters: {"wap"=>"popular"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/?wap=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:01:17) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:02:17) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 391ms (View: 109, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:05:43) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 250ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:07:16) [POST]
+  Parameters: {"way"=>"recent"}
+
+ActionView::MissingTemplate (Missing template home/filter.erb in view path app/views):
+  app/controllers/home_controller.rb:8:in `filter'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:09:43) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 94, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:09:47) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:09:50) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:10:00) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 578ms (View: 203, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:10:04) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:10:06) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:11:21) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:11:34) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:11:36) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:11:39) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:16:29) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:16:33) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:23:04) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:23:18) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 266ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:24:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (109.4ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 672ms (View: 422, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:24:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (33937.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 34219ms (View: 33984, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:24:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:25:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (156.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 750ms (View: 469, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:25:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:25:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (140.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 375ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:25:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (18312.5ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 18547ms (View: 18359, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:26:20) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:26:21) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:27:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:27:33) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:27:41) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:27:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (78.1ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 391ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:27:54) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:28:08) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:28:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:28:22) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:28:26) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:29:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:29:27) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:29:30) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:29:31) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:32:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 266ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:33:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:33:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (156.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 391ms (View: 219, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:33:37) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:33:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (78.1ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 500ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:02) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:03) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:03) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:03) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:04) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:04) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:06) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:07) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:14) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:34:15) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:35:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (78.1ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 391ms (View: 141, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:35:42) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:40:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:40:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (31.2ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 406ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:40:55) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:41:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (62.5ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:41:29) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:41:35) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:53:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `js' for #<ActionView::Base:0x5e97418>) on line #2 of app/views/share/_main_tabs.erb:
+1: <div id="main-tabs">
+2:   <%=get_main_tabs%>
+3: </div> <!--加载查看博客方式 ,Recent Popular Random 三种 分类-->
+
+    app/helpers/home_helper.rb:24:in `get_li_list2'
+    app/helpers/home_helper.rb:20:in `each'
+    app/helpers/home_helper.rb:20:in `get_li_list2'
+    app/helpers/home_helper.rb:5:in `get_main_tabs'
+    app/views/share/_main_tabs.erb:2
+    app/views/home/index.rhtml:6:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (218.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:54:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `js' for #<ActionView::Base:0x5b64868>) on line #2 of app/views/share/_main_tabs.erb:
+1: <div id="main-tabs">
+2:   <%=get_main_tabs%>
+3: </div> <!--加载查看博客方式 ,Recent Popular Random 三种 分类-->
+
+    app/helpers/home_helper.rb:24:in `get_li_list2'
+    app/helpers/home_helper.rb:20:in `each'
+    app/helpers/home_helper.rb:20:in `get_li_list2'
+    app/helpers/home_helper.rb:5:in `get_main_tabs'
+    app/views/share/_main_tabs.erb:2
+    app/views/home/index.rhtml:6:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (359.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:55:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (5140.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 5453ms (View: 5172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:55:37) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 14:59:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (3640.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 3859ms (View: 3688, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:59:29) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:59:32) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 14:59:34) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:01:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 469ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:01:40) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:01:41) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:03:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:03:55) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:05:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 266ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:05:37) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:07:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (67281.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 67594ms (View: 67344, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:08:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (17515.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 17750ms (View: 17562, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:08:54) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:08:56) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:06) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:06) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:07) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:08) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:08) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:09) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:10:12) [GET]
+  Parameters: {"type"=>"life"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 250ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=life]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:10:19) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:26) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:27) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:28) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:29) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:29) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:30) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:30) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:31) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:31) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (15.6ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:31) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (15.6ms)
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:32) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (46.9ms)
+Rendered home/_main_content (0.0ms)
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:32) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:33) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:33) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:33) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:34) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:10:34) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:11:48) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 375ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:14:18) [GET]
+  Parameters: {"type"=>"arts"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 344ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=arts]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:14:22) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:14:23) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:14:23) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:15:09) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:17:31) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 250ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:17:43) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (30375.0ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 30719ms (View: 30422, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:18:16) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:18:18) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:18:43) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (156.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 391ms (View: 203, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:18:52) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (32703.1ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 32953ms (View: 32750, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:19:28) [GET]
+  Parameters: {"type"=>"technology"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=technology]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:20:17) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:20:18) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:20:19) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:20:58) [POST]
+  Parameters: {"way"=>"recent"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=recent]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:20:59) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]

@@ -46,9 +46,40 @@ module ApplicationHelper
     field = field.is_a?(Symbol) ? field.to_s : field
     errors = model.errors[field]
     return unless errors
-     error_list = []
+    error_list = []
     errors.each{ | msg| error_list << content_tag("li", msg) }
-     content_tag("div", content_tag("ul", error_list), "id" =>  "errorExplanation", \
-          "class" =>  "errorExplanation" )
-  end  
+    content_tag("div", content_tag("ul", error_list), "id" =>  "errorExplanation", \
+        "class" =>  "errorExplanation" )
+  end
+
+
+  #加载博客分类列
+  def head_content
+    type_list = APP_CONFIG["type"]
+    content_tag("ul",  get_li_list(type_list),\
+        "id" =>  "secondary-menu", "class" =>  "nav clearfix sf-js-enabled" )
+  end
+
+  def get_li_list(list)
+    li_list = []
+    list.each{|type|
+      temp_ul = ''
+      temp_ul = content_tag("ul",get_li_list(type["children"]),:class=>"sub-menu", \
+          :style=>"display: none; visibility: hidden; ") if type["children"]
+
+      li_list<<content_tag("li", link_to(t(type["value"]),"/home?type=#{type["value"]}",:onclick=>'alert("功能未完成")')+temp_ul,\
+          :id=>"menu-item-62" ,:class=>"#{set_li_class(type["value"])}")
+    }
+    return li_list
+  end
+
+  def set_li_class(type)
+    class_s = "menu-item menu-item-type-taxonomy"
+    class_s +=" current-menu-item current-category-ancestor \
+              current-menu-ancestor current-menu-parent menu-item-66 sf-ul" if type==params[:type]
+  end
+
+
+
+
 end
