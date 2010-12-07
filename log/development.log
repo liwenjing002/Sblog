@@ -36400,3 +36400,1719 @@ Rendering home/filter
 Rendered share/_main_tabs (31.2ms)
 Rendered home/_main_content (0.0ms)
 Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:33:42) [GET]
+  Parameters: {"type"=>"Digital"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (can't convert nil into String) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4:   <div id="search-bar">
+5:     <form method="get" id="searchform" action="http://www.elegantthemes.com/preview/AskIt">
+6:       <input type="text" value="search this site..." name="s" id="searchinput"/>
+
+    app/helpers/application_helper.rb:79:in `include?'
+    app/helpers/application_helper.rb:79:in `set_li_class'
+    app/helpers/application_helper.rb:71:in `get_li_list'
+    app/helpers/application_helper.rb:65:in `each'
+    app/helpers/application_helper.rb:65:in `get_li_list'
+    app/helpers/application_helper.rb:59:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:22:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:34:08) [GET]
+  Parameters: {"type"=>"life"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (can't convert nil into String) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4:   <div id="search-bar">
+5:     <form method="get" id="searchform" action="http://www.elegantthemes.com/preview/AskIt">
+6:       <input type="text" value="search this site..." name="s" id="searchinput"/>
+
+    app/helpers/application_helper.rb:79:in `include?'
+    app/helpers/application_helper.rb:79:in `set_li_class'
+    app/helpers/application_helper.rb:71:in `get_li_list'
+    app/helpers/application_helper.rb:65:in `each'
+    app/helpers/application_helper.rb:65:in `get_li_list'
+    app/helpers/application_helper.rb:59:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:22:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:34:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?) on line #3 of app/views/layouts/_header_content.erb:
+1:  <div id="header-bottom">
+2: <div class="container">
+3:   <%=head_content%>
+4:   <div id="search-bar">
+5:     <form method="get" id="searchform" action="http://www.elegantthemes.com/preview/AskIt">
+6:       <input type="text" value="search this site..." name="s" id="searchinput"/>
+
+    app/helpers/application_helper.rb:79:in `set_li_class'
+    app/helpers/application_helper.rb:71:in `get_li_list'
+    app/helpers/application_helper.rb:65:in `each'
+    app/helpers/application_helper.rb:65:in `get_li_list'
+    app/helpers/application_helper.rb:59:in `head_content'
+    app/views/layouts/_header_content.erb:3
+    app/views/layouts/application.rhtml:22:in `_run_rhtml_app47views47layouts47application46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:34:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:35:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (140.6ms)
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 766ms (View: 484, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:35:32) [GET]
+  Parameters: {"type"=>"a"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=a]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:35:37) [GET]
+  Parameters: {"type"=>"c2"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=c2]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:37:12) [GET]
+  Parameters: {"type"=>"c2"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 312ms (View: 62, DB: 0) | 200 OK [http://localhost/home?type=c2]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:37:16) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 344ms (View: 141, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 15:37:17) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:37:18) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>"", "email"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_name" = '' AND "users"."password" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 391ms (View: 78, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 15:37:20) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-12-07 15:37:24) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "alias_name"=>"", "password"=>"", "password_comfire"=>"", "email"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_name" = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (46.9ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 438ms (View: 125, DB: 0) | 200 OK [http://localhost/user/signup]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 15:37:26) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-12-07 15:38:01) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "alias_name"=>"", "password"=>"", "password_comfire"=>"", "email"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_name" = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (62.5ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 406ms (View: 125, DB: 0) | 200 OK [http://localhost/user/signup]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 15:38:04) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-12-07 15:38:37) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "alias_name"=>"", "password"=>"", "password_comfire"=>"", "email"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_name" = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (0.0ms)
+Rendered user/_signup_form (62.5ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 453ms (View: 125, DB: 0) | 200 OK [http://localhost/user/signup]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-07 15:38:40) [GET]
+
+ActionController::RoutingError (No route matches "/user/favicon.ico" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-12-07 15:39:31) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "alias_name"=>"", "password"=>"", "password_comfire"=>"", "email"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_name" = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (46.9ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 453ms (View: 141, DB: 0) | 200 OK [http://localhost/user/signup]
+
+
+Processing AboutController#msg (for 127.0.0.1 at 2010-12-07 15:39:46) [GET]
+Rendering template within layouts/application
+Rendering about/msg
+Rendered share/_web_map_tabs (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 94, DB: 0) | 200 OK [http://localhost/about/msg]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:39:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 375ms (View: 78, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:40:02) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 94, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:40:54) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered share/_web_map_tabs (15.6ms)
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 281ms (View: 94, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:41:03) [GET]
+  Parameters: {"type"=>"b"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 78, DB: 0) | 200 OK [http://localhost/home?type=b]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:42:32) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:42:32) [POST]
+  Parameters: {"way"=>"popular"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=popular]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:42:33) [POST]
+  Parameters: {"way"=>"unreply"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=unreply]
+
+
+Processing HomeController#filter (for 127.0.0.1 at 2010-12-07 15:42:34) [POST]
+  Parameters: {"way"=>"random"}
+Rendering home/filter
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/home/filter?way=random]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:45:01) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered share/_web_map_tabs (31.2ms)
+Rendered user/_login_form (62.5ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 547ms (View: 219, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:45:09) [POST]
+  Parameters: {"user"=>{"login_name"=>"lee456", "password"=>"123456", "email"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_name" = 'lee456' AND "users"."password" = '7c4a8d09ca3762af61e59520943dc26494f8941b') LIMIT 1[0m
+Redirected to http://localhost:3000/blog
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/user/login]
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-12-07 15:45:09) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 15:45:52) [POST]
+  Parameters: {"user"=>{"login_name"=>"lee456", "password"=>"123456", "email"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_name" = 'lee456' AND "users"."password" = '7c4a8d09ca3762af61e59520943dc26494f8941b') LIMIT 1[0m
+Redirected to http://localhost:3000/home
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/user/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 15:45:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101202084251)
+Migrating to CreateDelayedJobs (20101203010644)
+Migrating to CreateBlogs (20101207074432)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" varchar(255), "owner_id" int, "replay_count" int, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207074432')[0m
+Migrating to CreateTags (20101207075120)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207075120')[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "tags_in_blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "blog_id" int, "tag_id" int, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207075835')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("delayed_jobs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('delayed_jobs_priority')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags_in_blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:55:28) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x5be7338>):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:56:25) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (109.4ms)
+ERROR: compiling _run_erb_app47views47home47_main_content46erb_locals_main_content_object RAISED compile error
+F:/opensource/perfectblog/app/views/home/_main_content.erb:35: syntax error, unexpected kENSURE, expecting kEND
+F:/opensource/perfectblog/app/views/home/_main_content.erb:37: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47home47_main_content46erb_locals_main_content_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];main_content = local_assigns[:main_content];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"main-content\">\n  "
+; @blogs.each do|blog|; @output_buffer.concat "\n  <div class=\"entry\">\n    <div class=\"entry-top\">\n      <div class=\"entry-content\">\n       <span class=\"comment-number\">"
+
+
+
+; @output_buffer.concat(( link_to blog.replay_count,"#").to_s); @output_buffer.concat "</span>\n        <h2 class=\"title\">"
+; @output_buffer.concat(( link_to blog.title,"#").to_s); @output_buffer.concat "</h2>\n        <span class=\"quote\"></span>\n        <div class=\"author\">-- "
+
+; @output_buffer.concat(( link_to blog.user.alias_name,"#").to_s); @output_buffer.concat "\n          on Nov 17, 2010 in<a href=\"http://www.elegantthemes.com/preview/AskIt/?cat=3\" title=\"View all posts in Technology\" rel=\"category\">Technology</a></div>\n\n        <div class=\"clear\"></div>\n        <div class=\"tags\">\n          <a href=\"http://www.elegantthemes.com/preview/AskIt/?tag=lcd\"><span>lcd</span></a>\n        </div> <!-- end .tags -->\n\n        <div id =\"post-content\" class=\"post-content\">\n          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed nibh augue. Donec odio dui, bibendum ac porta non,...</p>\n          <h2><a href=\"http://www.elegantthemes.com/preview/AskIt/?p=14\"> > >  more</a></h2>\n          <div class=\"clear\"></div>\n        </div>\n      </div> <!-- end .entry-content -->\n    </div> <!-- end .entry-top -->\n  </div>\n  <div class=\"clear\"></div>\n\n  <div class=\"wp-pagenavi\">\n    <span class=\"pages\">Page 1 of 3</span><span class=\"current\">1</span>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=2\" class=\"page\">2</a>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=3\" class=\"page\">3</a>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=2\" class=\"nextpostslink\">\302\273</a>\n  </div>\n    "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( will_paginate @blogs  ).to_s); @output_buffer.concat "\n</div> <!-- end #main-recent -->"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: F:/opensource/perfectblog/app/views/home/_main_content.erb:37:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+F:/opensource/perfectblog/app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script\server:3
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+C:/Ruby187/bin/rdebug-ide:19:in `load'
+C:/Ruby187/bin/rdebug-ide:19
+
+ActionView::TemplateError (compile error
+F:/opensource/perfectblog/app/views/home/_main_content.erb:35: syntax error, unexpected kENSURE, expecting kEND
+F:/opensource/perfectblog/app/views/home/_main_content.erb:37: syntax error, unexpected $end, expecting kEND) on line #35 of app/views/home/_main_content.erb:
+32:   </div>
+33:     <%= will_paginate @blogs  %>
+34: </div> <!-- end #main-recent -->
+
+    app/views/home/_main_content.erb:37:in `compile!'
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (281.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:57:00) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+ERROR: compiling _run_erb_app47views47home47_main_content46erb_locals_main_content_object RAISED compile error
+F:/opensource/perfectblog/app/views/home/_main_content.erb:35: syntax error, unexpected kENSURE, expecting kEND
+F:/opensource/perfectblog/app/views/home/_main_content.erb:37: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47home47_main_content46erb_locals_main_content_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];main_content = local_assigns[:main_content];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"main-content\">\n  "
+; @blogs.each do|blog|; @output_buffer.concat "\n  <div class=\"entry\">\n    <div class=\"entry-top\">\n      <div class=\"entry-content\">\n       <span class=\"comment-number\">"
+
+
+
+; @output_buffer.concat(( link_to blog.replay_count,"#").to_s); @output_buffer.concat "</span>\n        <h2 class=\"title\">"
+; @output_buffer.concat(( link_to blog.title,"#").to_s); @output_buffer.concat "</h2>\n        <span class=\"quote\"></span>\n        <div class=\"author\">-- "
+
+; @output_buffer.concat(( link_to blog.user.alias_name,"#").to_s); @output_buffer.concat "\n          on Nov 17, 2010 in<a href=\"http://www.elegantthemes.com/preview/AskIt/?cat=3\" title=\"View all posts in Technology\" rel=\"category\">Technology</a></div>\n\n        <div class=\"clear\"></div>\n        <div class=\"tags\">\n          <a href=\"http://www.elegantthemes.com/preview/AskIt/?tag=lcd\"><span>lcd</span></a>\n        </div> <!-- end .tags -->\n\n        <div id =\"post-content\" class=\"post-content\">\n          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed nibh augue. Donec odio dui, bibendum ac porta non,...</p>\n          <h2><a href=\"http://www.elegantthemes.com/preview/AskIt/?p=14\"> > >  more</a></h2>\n          <div class=\"clear\"></div>\n        </div>\n      </div> <!-- end .entry-content -->\n    </div> <!-- end .entry-top -->\n  </div>\n  <div class=\"clear\"></div>\n\n  <div class=\"wp-pagenavi\">\n    <span class=\"pages\">Page 1 of 3</span><span class=\"current\">1</span>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=2\" class=\"page\">2</a>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=3\" class=\"page\">3</a>\n    <a href=\"http://www.elegantthemes.com/preview/AskIt/?paged=2\" class=\"nextpostslink\">\302\273</a>\n  </div>\n\n</div> <!-- end #main-recent -->"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: F:/opensource/perfectblog/app/views/home/_main_content.erb:37:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+F:/opensource/perfectblog/app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script\server:3
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+C:/Ruby187/bin/rdebug-ide:19:in `load'
+C:/Ruby187/bin/rdebug-ide:19
+
+ActionView::TemplateError (compile error
+F:/opensource/perfectblog/app/views/home/_main_content.erb:35: syntax error, unexpected kENSURE, expecting kEND
+F:/opensource/perfectblog/app/views/home/_main_content.erb:37: syntax error, unexpected $end, expecting kEND) on line #35 of app/views/home/_main_content.erb:
+32:   </div>
+33: 
+34: </div> <!-- end #main-recent -->
+
+    app/views/home/_main_content.erb:37:in `compile!'
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:57:40) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (140.6ms)
+
+ActionView::TemplateError (undefined method `alias_name' for nil:NilClass) on line #9 of app/views/home/_main_content.erb:
+6:        <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+7:         <h2 class="title"><%= link_to blog.title,"#"%></h2>
+8:         <span class="quote"></span>
+9:         <div class="author">-- <%= link_to blog.user.alias_name,"#"%>
+10:           on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+11: 
+12:         <div class="clear"></div>
+
+    app/views/home/_main_content.erb:9
+    app/views/home/_main_content.erb:2:in `each'
+    app/views/home/_main_content.erb:2
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:58:09) [GET]
+  [4;35;1mBlog Load (15.6ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+
+ActionView::TemplateError (undefined method `alias_name' for nil:NilClass) on line #9 of app/views/home/_main_content.erb:
+6:        <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+7:         <h2 class="title"><%= link_to blog.title,"#"%></h2>
+8:         <span class="quote"></span>
+9:         <div class="author">-- <%= link_to blog.user.alias_name,"#"%>
+10:           on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+11: 
+12:         <div class="clear"></div>
+
+    app/views/home/_main_content.erb:9
+    app/views/home/_main_content.erb:2:in `each'
+    app/views/home/_main_content.erb:2
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 16:59:54) [GET]
+  [4;36;1mBlog Load (15.6ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+
+ActionView::TemplateError (undefined method `alias_name' for nil:NilClass) on line #9 of app/views/home/_main_content.erb:
+6:        <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+7:         <h2 class="title"><%= link_to blog.title,"#"%></h2>
+8:         <span class="quote"></span>
+9:         <div class="author">-- <%= link_to blog.user.alias_name,"#"%>
+10:           on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+11: 
+12:         <div class="clear"></div>
+
+    app/views/home/_main_content.erb:9
+    app/views/home/_main_content.erb:2:in `each'
+    app/views/home/_main_content.erb:2
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:04:10) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+
+ActionView::TemplateError (undefined method `alias_name' for nil:NilClass) on line #9 of app/views/home/_main_content.erb:
+6:        <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+7:         <h2 class="title"><%= link_to blog.title,"#"%></h2>
+8:         <span class="quote"></span>
+9:         <div class="author">-- <%= link_to blog.user.alias_name,"#"%>
+10:           on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+11: 
+12:         <div class="clear"></div>
+
+    app/views/home/_main_content.erb:9
+    app/views/home/_main_content.erb:2:in `each'
+    app/views/home/_main_content.erb:2
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (312.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:05:34) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+
+ActionView::TemplateError (undefined method `alias_name' for nil:NilClass) on line #9 of app/views/home/_main_content.erb:
+6:        <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+7:         <h2 class="title"><%= link_to blog.title,"#"%></h2>
+8:         <span class="quote"></span>
+9:         <div class="author">-- <%= link_to blog.user.alias_name,"#"%>
+10:           on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+11: 
+12:         <div class="clear"></div>
+
+    app/views/home/_main_content.erb:9
+    app/views/home/_main_content.erb:2:in `each'
+    app/views/home/_main_content.erb:2
+    app/views/home/index.rhtml:9:in `_run_rhtml_app47views47home47index46rhtml'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /script\server:3
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    C:/Ruby187/bin/rdebug-ide:19:in `load'
+    C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (312.5ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:06:23) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (46.9ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 18266ms (View: 188, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:07:27) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (31.2ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 2250ms (View: 109, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:07:55) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 375ms (View: 109, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:08:44) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (3484.4ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 3859ms (View: 3578, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:09:31) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (890.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 1250ms (View: 953, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:11:38) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 328ms (View: 109, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:11:48) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (15.6ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 359ms (View: 109, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:12:39) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (31.2ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 406ms (View: 94, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:13:28) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendered home/_main_content (31.2ms)
+Rendered share/_siderbar_right (15.6ms)
+Rendered layouts/_header_inner (15.6ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 531ms (View: 141, DB: 0) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101202084251)
+Migrating to CreateDelayedJobs (20101203010644)
+Migrating to CreateBlogs (20101207074432)
+Migrating to CreateTags (20101207075120)
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("delayed_jobs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('delayed_jobs_priority')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags_in_blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "tags_in_blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207075835'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mDROP TABLE "tags_in_blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207075835'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "tags_in_blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207075835'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101202084251)
+Migrating to CreateDelayedJobs (20101203010644)
+Migrating to CreateBlogs (20101207074432)
+Migrating to CreateTags (20101207075120)
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("delayed_jobs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('delayed_jobs_priority')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags_in_blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::BusyException: database is locked: DROP TABLE "tags_in_blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "tags_in_blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207075835'[0m
+Migrating to CreateTags (20101207075120)
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "tags"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207075120'[0m
+Migrating to CreateBlogs (20101207074432)
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "blogs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101207074432'[0m
+Migrating to CreateDelayedJobs (20101203010644)
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "delayed_jobs"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101203010644'[0m
+Migrating to CreateUsers (20101202084251)
+  [4;35;1mSQL (15.6ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101202084251'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101202084251)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login_name" varchar(255), "password" varchar(255), "alias_name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101202084251')[0m
+Migrating to CreateDelayedJobs (20101203010644)
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0, "attempts" integer DEFAULT 0, "handler" text, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101203010644')[0m
+Migrating to CreateBlogs (20101207074432)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "text" varchar(255), "owner_id" int, "type" varchar(255), "replay_count" int, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207074432')[0m
+Migrating to CreateTags (20101207075120)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207075120')[0m
+Migrating to CreateTagsInBlogs (20101207075835)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "tags_in_blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "blog_id" int, "tag_id" int, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101207075835')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("delayed_jobs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('delayed_jobs_priority')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags_in_blogs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-12-07 17:19:00) [GET]
+Redirected to http://localhost:3000/home
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:19:01) [GET]
+  [4;36;1mBlog Load (15.6ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (93.8ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 828ms (View: 484, DB: 16) | 200 OK [http://localhost/home]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-12-07 17:19:04) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered share/_web_map_tabs (0.0ms)
+Rendered user/_login_form (15.6ms)
+Rendered user/_signup_form (15.6ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (15.6ms)
+Rendered layouts/_foot_content (0.0ms)
+Rendered layouts/_load_js (15.6ms)
+Completed in 484ms (View: 172, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-12-07 17:19:22) [POST]
+  Parameters: {"user"=>{"login_name"=>"lee123", "alias_name"=>"无量天尊", "password"=>"123456", "password_comfire"=>"123456", "email"=>"liwenjingabc@126.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_name" = 'lee123') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'liwenjingabc@126.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("created_at", "login_name", "updated_at", "alias_name", "password", "email") VALUES('2010-12-07 09:19:22', 'lee123', '2010-12-07 09:19:22', '无量天尊', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'liwenjingabc@126.com')[0m
+  [4;36;1mDelayed::Backend::ActiveRecord::Job Create (0.0ms)[0m   [0;1mINSERT INTO "delayed_jobs" ("failed_at", "locked_by", "created_at", "handler", "updated_at", "priority", "run_at", "attempts", "locked_at", "last_error") VALUES(NULL, NULL, '2010-12-07 09:19:23', '--- !ruby/struct:Delayed::PerformableMethod 
+object: LOAD;Mailer
+method: :deliver_signup_send
+args: 
+- LOAD;User;1
+', '2010-12-07 09:19:23', 0, '2010-12-07 09:19:22', 0, NULL, NULL)[0m
+Redirected to http://localhost:3000/
+Completed in 672ms (DB: 0) | 302 Found [http://localhost/user/signup]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:19:23) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered share/_main_tabs (31.2ms)
+Rendered home/_main_content (0.0ms)
+Rendered share/_siderbar_right (0.0ms)
+Rendered layouts/_header_inner (0.0ms)
+Rendered layouts/_header_content (0.0ms)
+Rendered layouts/_foot_content (15.6ms)
+Rendered layouts/_load_js (0.0ms)
+Completed in 547ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:21:51) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '生活'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Blog.inheritance_column to use another column for that information.):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:23:10) [GET]
+  [4;35;1mBlog Load (31.2ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '生活'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Blog.inheritance_column to use another column for that information.):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:23:17) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'life'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Blog.inheritance_column to use another column for that information.):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (296.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:23:29) [GET]
+  [4;35;1mBlog Load (0.0ms)[0m   [0mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'life'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Blog.inheritance_column to use another column for that information.):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-12-07 17:23:48) [GET]
+  [4;36;1mBlog Load (0.0ms)[0m   [0;1mSELECT * FROM "blogs" LIMIT 10 OFFSET 0[0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'life'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Blog.inheritance_column to use another column for that information.):
+  app/controllers/home_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /script\server:3
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  C:/Ruby187/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  C:/Ruby187/bin/rdebug-ide:19:in `load'
+  C:/Ruby187/bin/rdebug-ide:19
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)

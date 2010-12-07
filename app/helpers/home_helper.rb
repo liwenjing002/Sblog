@@ -1,6 +1,7 @@
 module HomeHelper
 
 
+  #获得博客筛选列，最新最热门之类的
   def get_main_tabs
     wap_list = APP_CONFIG["wap"]
     li_list = []

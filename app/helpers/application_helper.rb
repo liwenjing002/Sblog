@@ -4,24 +4,26 @@ module ApplicationHelper
     session[:is_login]
   end
 
+  #获得登录名
   def get_login_name
     session[:login_name]
   end
 
-  def show_error_in_chinese(errors)
-    errors.each{ |key, msg| yield msg}
 
-  end
-  def  error_messages_for(object_name)
-    object = instance_variable_get("@#{object_name}")
-    if object && !object.errors.empty?
-      error_lis = []
-      object.errors.each{ |key, msg| error_lis << content_tag("li", msg) }
-      content_tag("div", content_tag( "h2", "哦哦~~~出错了" ) + \
-          content_tag("ul", error_lis), "id" =>  "errorExplanation", \
-          "class" =>  "errorExplanation" )
-    end
-  end
+#  def show_error_in_chinese(errors)
+#    errors.each{ |key, msg| yield msg}
+#
+#  end
+#  def  error_messages_for(object_name)
+#    object = instance_variable_get("@#{object_name}")
+#    if object && !object.errors.empty?
+#      error_lis = []
+#      object.errors.each{ |key, msg| error_lis << content_tag("li", msg) }
+#      content_tag("div", content_tag( "h2", "哦哦~~~出错了" ) + \
+#          content_tag("ul", error_lis), "id" =>  "errorExplanation", \
+#          "class" =>  "errorExplanation" )
+#    end
+#  end
 
   def get_flash(type)
     if flash!= nil && flash.length!=0
@@ -67,8 +69,8 @@ module ApplicationHelper
       temp_ul = content_tag("ul",get_li_list(type["children"]),:class=>"sub-menu", \
           :style=>"display: none; visibility: hidden; ") if type["children"]
 
-      li_list<<content_tag("li", link_to(t(type["value"]),"/home?type=#{type["value"]}",:onclick=>'alert("功能未完成")')+temp_ul,\
-          :id=>"menu-item-62" ,:class=>"#{set_li_class(type["value"])}")
+      li_list<<content_tag("li", link_to(t(type["value"]),"/home?type=#{type["code"]}",:onclick=>'alert("功能未完成")')+temp_ul,\
+          :id=>"menu-item-62" ,:class=>"#{set_li_class(type["code"])}")
     }
     return li_list
   end
@@ -76,10 +78,12 @@ module ApplicationHelper
   def set_li_class(type)
     class_s = "menu-item menu-item-type-taxonomy"
     class_s +=" current-menu-item current-category-ancestor \
-              current-menu-ancestor current-menu-parent menu-item-66 sf-ul" if type==params[:type]
+              current-menu-ancestor current-menu-parent menu-item-66 sf-ul" if params[:type] and params[:type].include?(type)
   end
 
 
-
+def format_date(date,formate)
+  date.strftime(formate)
+end
 
 end

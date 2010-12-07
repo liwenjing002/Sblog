@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101203010644) do
+ActiveRecord::Schema.define(:version => 20101207075835) do
+
+  create_table "blogs", :force => true do |t|
+    t.string   "title"
+    t.string   "text"
+    t.integer  "owner_id"
+    t.string   "type"
+    t.integer  "replay_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -25,6 +35,19 @@ ActiveRecord::Schema.define(:version => 20101203010644) do
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
+
+  create_table "tags", :force => true do |t|
+    t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags_in_blogs", :force => true do |t|
+    t.integer  "blog_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login_name"
