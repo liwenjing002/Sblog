@@ -7,8 +7,8 @@
         <h2 class="title"><%= link_to blog.title,"#"%></h2>
         <span class="quote"></span>
         <div class="author">-- <%= link_to blog.user.alias_name+" ,","#"%>
-          <%= format_date(blog.updated_at,"%Y-%m-%d")%><a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a>
-        <%#= link_to blog.type,"#",:rel=>"category"%>
+          <%= format_date(blog.updated_at,"%Y-%m-%d")%>
+        <%= link_to blog.blog_type,"#",:rel=>"category"%>
         </div>
 
         <div class="clear"></div>
