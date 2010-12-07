@@ -11,7 +11,7 @@ Rails::Initializer.run do |config|
 
 end
 require 'delayed_job'
-
+require 'will_paginate'
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address => "smtp.gmail.com",

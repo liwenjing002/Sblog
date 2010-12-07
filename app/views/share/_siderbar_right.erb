@@ -1,17 +1,16 @@
 <div id="sidebar">
   <div id="sidebar-bottom">
     <div id="sidebar-content">
-       <% if !is_login -%>
-      <div class="widget-button">
-        <a href="/user/login" id="call_to_action"><span><%= t('login')+"/"+t('register')%></span></a>
-      </div>
+      <% if !is_login -%>
+        <div class="widget-button">
+          <%= link_to "<span> #{t('login')}/#{t('register')} </span>",{:controller=>'user',:action=>'login'},:id=>"call_to_action"%>
+        </div>
       <%else%>
-       
-      <a href="/home" id="call_to_action"><span><%=  t("my_blog") %></span></a>
-      <a href="/user/logout" id="call_to_action"><span><%= t('logout')%></span></a>
+        <%= link_to "<span>#{t("my_blog")}</span>",{:controller=>'home'},:id=>"call_to_action"%>
+        <%= link_to "<span>#{t("logout")}</span>",{:controller=>'user',:action=>'logout'},:id=>"call_to_action"%>
       <%end%>
       <div class="widget-button">
-        <a href="/user/login" id="call_to_action"><span><%=t "write_blog"%></span></a>
+        <%= link_to "<span>#{t("write_blog")}</span>",{:controller=>'home'},:id=>"call_to_action"%>
       </div>
       <div id="tabbed" class="sidebar-block ui-tabs ui-widget ui-widget-content ui-corner-all">
         <ul id="tabbed-area" class="clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">

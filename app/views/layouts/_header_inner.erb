@@ -1,9 +1,8 @@
 <div id="header">
   <div id="header-inner">
     <div class="container">
-      <a href="http://www.elegantthemes.com/preview/AskIt">
-        <img src="/images/logo.png" alt="AskIt Logo" id="logo"/>
-      </a>
+      <%= link_to image_tag("logo.png",:alt => "S blog logo",:id=>'logo'), :controller => 'home'%>
+
 
       <ul id="primary-menu" class="nav sf-js-enabled">
         <li id="menu-item-57" class='<%= head_inner_class("index") %>'>

@@ -1,0 +1,22 @@
+##博客分类
+type:
+  - value: 'life'
+    code: 'a'
+  - value: 'arts'
+    code: 'b'
+  - value: 'technology'
+    code: 'c'
+    children:
+      - value: 'computer'
+        code: 'c1'
+      - value: 'Digital'
+        code: 'c2'
+      - value: 'Industry'
+        code: 'c3'
+ #查看博客方法，随机，最新，最热门之类
+wap:
+  - value: 'recent'
+  - value: 'popular'
+  - value: 'unreply'
+  - value: 'random'
+

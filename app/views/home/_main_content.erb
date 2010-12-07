@@ -1,11 +1,15 @@
 <div id="main-content">
+  <%@blogs.each do|blog|%>
   <div class="entry">
     <div class="entry-top">
       <div class="entry-content">
-       <span class="comment-number"><a href="http://www.elegantthemes.com/preview/AskIt/?p=14#comment-wrap">5</a></span>
-        <h2 class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=14">What is the best WordPress eCommerce plugin?</a></h2>
+       <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
+        <h2 class="title"><%= link_to blog.title,"#"%></h2>
         <span class="quote"></span>
-        <div class="author">-- <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach,</a>on Nov 17, 2010 in<a href="http://www.elegantthemes.com/preview/AskIt/?cat=3" title="View all posts in Technology" rel="category">Technology</a></div>
+        <div class="author">-- <%= link_to blog.user.alias_name+" ,","#"%>
+          <%= format_date(blog.updated_at,"%Y-%m-%d")%>
+        <%= link_to blog.blog_type,"#",:rel=>"category"%>
+        </div>
 
         <div class="clear"></div>
         <div class="tags">
@@ -20,25 +24,14 @@
       </div> <!-- end .entry-content -->
     </div> <!-- end .entry-top -->
   </div>
-  <div class="entry">
-    <div class="entry-top">
-      <div class="entry-content">
-        <span class="comment-number"><a href="http://www.elegantthemes.com/preview/AskIt/?p=14#comment-wrap">5</a></span>
-        <h2 class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=14">What is the best WordPress eCommerce plugin?</a></h2>
-        <span class="quote"></span>
-        <span class="author">- <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach</a></span>
-        <div class="clear"></div>
-        <div class="tags">
-          <a href="http://www.elegantthemes.com/preview/AskIt/?tag=paypal"><span>paypal</span></a>
-          <a href="http://www.elegantthemes.com/preview/AskIt/?tag=plugin"><span>plugin</span></a>
-        </div> <!-- end .tags -->
-      </div> <!-- end .entry-content -->
-    </div> <!-- end .entry-top -->
-  </div> <!-- end .entry -->					<div class="clear"></div>
+  <div class="clear"></div>
+ <%end%>
   <div class="wp-pagenavi">
     <span class="pages">Page 1 of 3</span><span class="current">1</span>
     <a href="http://www.elegantthemes.com/preview/AskIt/?paged=2" class="page">2</a>
     <a href="http://www.elegantthemes.com/preview/AskIt/?paged=3" class="page">3</a>
     <a href="http://www.elegantthemes.com/preview/AskIt/?paged=2" class="nextpostslink">»</a>
   </div>
+    <%= will_paginate @blogs  %>
+
 </div> <!-- end #main-recent -->
