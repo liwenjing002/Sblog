@@ -69,7 +69,7 @@ module ApplicationHelper
       temp_ul = content_tag("ul",get_li_list(type["children"]),:class=>"sub-menu", \
           :style=>"display: none; visibility: hidden; ") if type["children"]
 
-      li_list<<content_tag("li", link_to(t(type["value"]),"/home?type=#{type["code"]}",:onclick=>'alert("功能未完成")')+temp_ul,\
+      li_list<<content_tag("li", link_to(t(type["value"]),"/home?type=#{type["code"]}")+temp_ul,\
           :id=>"menu-item-62" ,:class=>"#{set_li_class(type["code"])}")
     }
     return li_list
@@ -77,8 +77,9 @@ module ApplicationHelper
 
   def set_li_class(type)
     class_s = "menu-item menu-item-type-taxonomy"
+    params_type = params[:type]||"o"
     class_s +=" current-menu-item current-category-ancestor \
-              current-menu-ancestor current-menu-parent menu-item-66 sf-ul" if params[:type] and params[:type].include?(type)
+              current-menu-ancestor current-menu-parent menu-item-66 sf-ul" if params_type.include?(type)
   end
 
 

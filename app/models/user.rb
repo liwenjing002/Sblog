@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
     if u
       session[:is_login] = true
       session[:login_name] = u.login_name
+      session[:login_id] = u.id
     else
       errors.add(:login_name, "用户名密码错误")
       return false

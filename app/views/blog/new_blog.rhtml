@@ -1,0 +1,58 @@
+
+<div id="main-area">
+
+  <!-- 加载二级分类导航 -->
+  <%= render(:partial => "share/web_map_tabs") %>
+
+  <!-- 加载加载留言 -->
+  <div class="entry page">
+    <div class="entry-top">
+      <div class="entry-content">
+        <h2 class="title"><%=t "write_blog"%></h2>
+        <div class="clear"></div>
+        <div class="page-separator"></div>
+        <div class="post-content">
+          <div id="create_new_post">
+            <% form_tag(:action =>"new_blog") do %>
+              <p class="clearfix">
+                <label for="et_newpost_title" class="inputlable"><%= t  "title"%>:</label>
+                 <%= text_field 'blog', 'title',:class=>"input" %>
+               <small>*</small>
+                <%= error_div(@blog, :title)%>
+              </p>
+
+              <p class="clearfix">
+                <label for="et_newpost_tags" class="inputlable"><%= t "blog_tags" %>:</label>
+                <%= text_field 'blog', 'blog_tags',:class=>"input" %>
+                <small>(使用英语逗号分隔)</small>
+                <%= error_div(@blog, :blog_tags)%>
+              </p>
+
+              <p class="clearfix">
+                <label for="et_newpost_tags" class="inputlable"><%= t "blog_type" %>:</label>
+                <%=select 'blog', 'blog_type',get_child_type,{:include_blank => '--请选择--'},
+                  {:class=>"input", "onchange" => remote_function(:with => "'father='+value",:update => 'next_select', :url => { :action => :select_with_ajax })}%>
+                <span id='next_select'></span>
+                <small>*</small>
+                <%= error_div(@blog, :blog_tags)%>
+              </p>
+
+              <p class="clearfix">
+                <label for="et_newpost_content" class="inputlable"><%= t "content" %>:</label>
+                <%= error_div(@blog, :text)%>
+              </p>
+               <%= text_area 'blog', 'text' , :class => "mceEditor input" %>
+              <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
+              <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
+          <% end -%>
+          </div> <!-- end #create_new_post -->
+
+          <div class="clear"></div>
+        </div>
+      </div> <!-- end .entry-content -->
+    </div> <!-- end .entry-top -->
+  </div>
+</div>
+
+<!-- 加载右部工具栏 -->
+<%= render(:partial => "share/siderbar_right") %>

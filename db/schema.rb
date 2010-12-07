@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20101207075835) do
     t.string   "title"
     t.string   "text"
     t.integer  "owner_id"
-    t.string   "type"
+    t.string   "blog_type"
     t.integer  "replay_count"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,5 +1,7 @@
 ##博客分类
 type:
+  - value: 'all'
+    code: 'o'
   - value: 'life'
     code: 'a'
   - value: 'arts'

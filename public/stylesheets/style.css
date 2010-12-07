@@ -172,7 +172,7 @@ div.postmeta p.postinfo a { color: #303030; font-weight: bold; }
 .input { background: #f6f6f6 url(/images/textarea-bg.png) repeat-x !important; border: 1px solid #d4d2d2 !important; border-radius: 8px  !important; -webkit-border-radius: 8px !important; -moz-border-radius: 8px !important; color: #303030 !important; padding: 7px !important; margin: 0px !important; }
 
 input.input { width: 300px; }
-textarea.input { width: 400px; height:130px; }
+textarea.input { width: 585px; height:200px; }
 div.title { margin-bottom: 10px; }
 .inputlable, #register-form label { color: #303030; font-size: 20px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; float:left; width:120px; padding-top: 5px; }
 

@@ -11,7 +11,7 @@ module HomeHelper
 
       li_list<<content_tag("li", link_to_remote("<span>#{t(way['value'])}</span>",\
             :update => "middle",\
-            :url=>{ :controller => "home",:action=>"filter",:way=>way["value"]})+\
+            :url=>{ :controller => "home",:way=>way["value"]})+\
           "<span class='arrow'></span>",:id=>"main_tab#{way["value"]}",:class=>"#{class_value}")
     }
     content_tag("ul", li_list,\
@@ -20,4 +20,15 @@ module HomeHelper
   end
 
 
+  def get_type_name(code)
+    type_list = APP_CONFIG["type"]
+    type_list.each{|type|
+      return t(type["value"]) if type["code"]==code
+      if type["children"]
+        type["children"].each{|type|
+          return t(type["value"]) if type["code"]==code
+        }
+      end
+    }
+  end
 end

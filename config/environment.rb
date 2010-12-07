@@ -8,10 +8,16 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
+  config.log_level = :debug
+  config.active_record.schema_format = :sql
+  config.logger = Logger.new(STDERR)
+  config.action_mailer.raise_delivery_errors = true
 
 end
 require 'delayed_job'
 require 'will_paginate'
+require 'tiny_mce'
+
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address => "smtp.gmail.com",

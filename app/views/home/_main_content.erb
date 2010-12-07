@@ -8,16 +8,18 @@
         <span class="quote"></span>
         <div class="author">-- <%= link_to blog.user.alias_name+" ,","#"%>
           <%= format_date(blog.updated_at,"%Y-%m-%d")%>
-        <%= link_to blog.blog_type,"#",:rel=>"category"%>
+        <%= link_to get_type_name(blog.blog_type),"#",:rel=>"category"%>
         </div>
 
         <div class="clear"></div>
         <div class="tags">
-          <a href="http://www.elegantthemes.com/preview/AskIt/?tag=lcd"><span>lcd</span></a>
+          <%  blog.tag.each do |tag|%>
+           <%= link_to "<span>#{tag.text}</span>","#"%>
+          <%end%>
         </div> <!-- end .tags -->
 
         <div id ="post-content" class="post-content">
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sed nibh augue. Donec odio dui, bibendum ac porta non,...</p>
+          <%= blog.text %>
           <h2><a href="http://www.elegantthemes.com/preview/AskIt/?p=14"> > >  more</a></h2>
           <div class="clear"></div>
         </div>

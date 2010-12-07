@@ -62,8 +62,10 @@ zh:
   reset: "重置"
   my_blog: "我的博客"
   write_blog: "写博客"
+  new_blog: "写博客"
   signup: "注册"
   html_title: "S blog 简单博客"
+  all: "全部"
   life: "生活"
   arts: "艺术"
   technology: "技术"
@@ -74,3 +76,5 @@ zh:
   popular: '最火'
   unreply: '最冷清'
   random: '随机'
+  blog_tags: '标签'
+  blog_type: '分类'

@@ -1,12 +1,13 @@
 class HomeController < ApplicationController
+
   def index
-      @blogs = Blog.paginate :per_page => 10, :page => params[:page]||1
-
-     p 123
+    type = params[:type]
+    type = nil if params[:type] == 'o'
+    @blogs = Blog.paginate :per_page => 10, :page => params[:page]||1,
+      :conditions => ['blog_type like ?',type||"%" ],
+      :order => 'created_at'
+    render :layout => false if params[:way]
   end
 
-  def filter
-    @a = "12312"
-  render :layout => false
-  end
+
 end
