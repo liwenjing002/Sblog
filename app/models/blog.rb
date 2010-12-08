@@ -4,7 +4,7 @@ class Blog < ActiveRecord::Base
 
   has_many :tags_in_blog
   has_many :tag, :through => :tags_in_blog
-  belongs_to :user,:foreign_key => "owner_id"
+  belongs_to :user,:foreign_key => "users_id"
 
   validates_presence_of :title,:message => "标题不为空"
   validates_presence_of :text,:message => "正文不为空"

@@ -27,7 +27,7 @@ class BlogController < ApplicationController
     @blog = Blog.new()
     return unless request.post?
     @blog = Blog.new(params[:blog])
-    @blog.owner_id =session[:login_id]
+    @blog.users_id = session[:login_id]
     @blog.blog_type = params["type2"][0] if params["type2"]
     if  @blog.save
       redirect_to :controller=>"home"
