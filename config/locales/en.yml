@@ -67,3 +67,14 @@ en:
   life: "life"
   arts: arts"
   technology: "technology"
+  computer: "computer"
+  Digital: "Digital"
+  Industry: "Industry"
+  recent: 'recent'
+  popular: 'popular'
+  unreply: 'unreply'
+  random: 'random'
+  blog_tags: 'blog tags'
+  blog_type: 'blog type'
+  previous: '<< previous'
+  next: '>> next'

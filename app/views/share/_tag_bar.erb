@@ -1,0 +1,7 @@
+<div class="tags_bar">
+  <%  @tags.each do |tag|%>
+    <%= link_to_remote("<span>#{tag.text}</span>",\
+        :update => "main-area",\
+        :url=>{ :controller => "home",:tag=>tag.id}) %>
+  <%end%>
+</div> <!-- end .tags -->

@@ -3,7 +3,7 @@ class CreateBlogs < ActiveRecord::Migration
     create_table :blogs do |t|
       t.column :title, :string
       t.column :text, :string
-      t.column :owner_id, :int
+      t.column :users_id, :int
       t.column :blog_type, :string
       t.column :replay_count, :int
       t.timestamps

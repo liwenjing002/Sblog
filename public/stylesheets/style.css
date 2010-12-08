@@ -145,6 +145,11 @@ div.tags a { background: url(/images/tag-bg.png) no-repeat top left; display: bl
 div.tags a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
 div.tags a:hover { text-decoration: none; color: #494949; }
 
+div.tags_bar { padding-bottom: 7px;color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px;}
+div.tags_bar a { background: url(/images/tag-bg.png) no-repeat top left; display: block; height: 28px; padding-left: 16px; float: left; font-size: 14px; color: #777676; font-family: Georgia; font-style: italic; text-shadow: 1px 1px 1px #fff; line-height: 23px; margin-right: 8px; }
+div.tags_bar a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
+div.tags_bar a:hover { text-decoration: none; color: #494949; }
+
 #breadcrumbs { color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px; }
 #breadcrumbs span.raquo, #breadcrumbs a { color: #a6a6a6; text-shadow: 1px 1px 1px #fff; }
 #breadcrumbs span.raquo { margin: 0px 5px; }
@@ -172,7 +177,7 @@ div.postmeta p.postinfo a { color: #303030; font-weight: bold; }
 .input { background: #f6f6f6 url(/images/textarea-bg.png) repeat-x !important; border: 1px solid #d4d2d2 !important; border-radius: 8px  !important; -webkit-border-radius: 8px !important; -moz-border-radius: 8px !important; color: #303030 !important; padding: 7px !important; margin: 0px !important; }
 
 input.input { width: 300px; }
-textarea.input { width: 585px; height:200px; }
+textarea.input { width: 585px; height:300px; }
 div.title { margin-bottom: 10px; }
 .inputlable, #register-form label { color: #303030; font-size: 20px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; float:left; width:120px; padding-top: 5px; }
 

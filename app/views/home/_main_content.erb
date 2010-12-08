@@ -1,39 +1,10 @@
 <div id="main-content">
   <%@blogs.each do|blog|%>
-  <div class="entry">
-    <div class="entry-top">
-      <div class="entry-content">
-       <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
-        <h2 class="title"><%= link_to blog.title,"#"%></h2>
-        <span class="quote"></span>
-        <div class="author">-- <%= link_to blog.user.alias_name+" ,","#"%>
-          <%= format_date(blog.updated_at,"%Y-%m-%d")%>
-        <%= link_to get_type_name(blog.blog_type),"#",:rel=>"category"%>
-        </div>
+    <!-- 加载一个博客 -->
+    <%= render(:partial => "share/blog_entry",:locals => {:blog => blog,:all=>nil}) %>
+    <div class="clear"></div>
+  <%end%>
 
-        <div class="clear"></div>
-        <div class="tags">
-          <%  blog.tag.each do |tag|%>
-           <%= link_to "<span>#{tag.text}</span>","#"%>
-          <%end%>
-        </div> <!-- end .tags -->
-
-        <div id ="post-content" class="post-content">
-          <%= blog.text %>
-          <h2><a href="http://www.elegantthemes.com/preview/AskIt/?p=14"> > >  more</a></h2>
-          <div class="clear"></div>
-        </div>
-      </div> <!-- end .entry-content -->
-    </div> <!-- end .entry-top -->
-  </div>
-  <div class="clear"></div>
- <%end%>
-  <div class="wp-pagenavi">
-    <span class="pages">Page 1 of 3</span><span class="current">1</span>
-    <a href="http://www.elegantthemes.com/preview/AskIt/?paged=2" class="page">2</a>
-    <a href="http://www.elegantthemes.com/preview/AskIt/?paged=3" class="page">3</a>
-    <a href="http://www.elegantthemes.com/preview/AskIt/?paged=2" class="nextpostslink">»</a>
-  </div>
-    <%= will_paginate @blogs  %>
+  <%= will_paginate @blogs , :class=>"wp-pagenavi"%>
 
 </div> <!-- end #main-recent -->

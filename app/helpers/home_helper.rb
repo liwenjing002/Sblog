@@ -10,8 +10,8 @@ module HomeHelper
       class_value = "active" if params[:way]==nil and way["value"]=="recent"
 
       li_list<<content_tag("li", link_to_remote("<span>#{t(way['value'])}</span>",\
-            :update => "middle",\
-            :url=>{ :controller => "home",:way=>way["value"]})+\
+            :update => "main-area",\
+            :url=>{ :controller => "home",:way=>way["value"],:tag=>params[:tag]})+\
           "<span class='arrow'></span>",:id=>"main_tab#{way["value"]}",:class=>"#{class_value}")
     }
     content_tag("ul", li_list,\

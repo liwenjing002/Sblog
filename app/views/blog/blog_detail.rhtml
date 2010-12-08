@@ -1,0 +1,15 @@
+<div id="main-area">
+  <div id="middle">
+    <div id="breadcrumbs">
+      <a href="/home"><%= t 'home' %></a>
+      <span class="raquo">»</span>
+      <%=link_to(t(get_type_by_code(@blog.blog_type)["value"]),"/home?type=#{@blog.blog_type}")%>
+      <span class="raquo">»</span>
+      <%= @blog.title %>
+    </div>
+    <!-- 加载一个博客 -->
+    <%= render(:partial => "share/blog_entry",:locals => {:blog => @blog,:all=>true}) %>
+  </div>
+</div>
+<!-- 加载右部工具栏 -->
+<%= render(:partial => "share/siderbar_right") %>

@@ -1,6 +1,6 @@
 class Blog < ActiveRecord::Base
-  has_many :tag,:finder_sql =>"select tags.* from tags,tags_in_blogs,blogs
-  where tags_in_blogs.blog_id =blogs.id and tags_in_blogs.tag_id = tags.id"
+  has_many :tags_in_blog
+  has_many :tag, :through => :tags_in_blog
   belongs_to :user,:foreign_key => "owner_id"
 
   validates_presence_of :title,:message => "标题不为空"
@@ -22,7 +22,9 @@ class Blog < ActiveRecord::Base
     tags.each{|tag_text|
       tag = Tag.find_by_text(tag_text)
       tag = Tag.new({:text=>tag_text}) if tag==nil
-      TagsInBlog.new({:blog_id=>self.id,:tag_id=>tag.id})
+      tag.save
+      tagsInBlog = TagsInBlog.new({:blog_id=>self.id,:tag_id=>tag.id})
+      tagsInBlog.save
     }
   end
 end

@@ -10,21 +10,6 @@ module ApplicationHelper
   end
 
 
-#  def show_error_in_chinese(errors)
-#    errors.each{ |key, msg| yield msg}
-#
-#  end
-#  def  error_messages_for(object_name)
-#    object = instance_variable_get("@#{object_name}")
-#    if object && !object.errors.empty?
-#      error_lis = []
-#      object.errors.each{ |key, msg| error_lis << content_tag("li", msg) }
-#      content_tag("div", content_tag( "h2", "哦哦~~~出错了" ) + \
-#          content_tag("ul", error_lis), "id" =>  "errorExplanation", \
-#          "class" =>  "errorExplanation" )
-#    end
-#  end
-
   def get_flash(type)
     if flash!= nil && flash.length!=0
       if type=='notice'
@@ -62,6 +47,16 @@ module ApplicationHelper
         "id" =>  "secondary-menu", "class" =>  "nav clearfix sf-js-enabled" )
   end
 
+
+  def get_type_by_code(code)
+    APP_CONFIG["type"].each{|type|
+      return type if type["code"] ==code
+      type["children"].each{|c_type|
+        return c_type if c_type["code"]==code
+      }if type["children"]
+    }
+  end
+
   def get_li_list(list)
     li_list = []
     list.each{|type|
@@ -83,8 +78,26 @@ module ApplicationHelper
   end
 
 
-def format_date(date,formate)
-  date.strftime(formate)
-end
+  def format_date(date,formate)
+    date.strftime(formate)
+  end
+
+
+  def summary(text)
+    truncate_u(text,100)
+  end
+
+
+  def truncate_u(text, length = 30, truncate_string = "   。 。 。")
+    l=0
+    char_array=text.unpack("U*")
+    char_array.each_with_index do |c,i|
+      l = l+ (c<127 ? 0.5 : 1)
+      if l>=length
+        return char_array[0..i].pack("U*")+(i<char_array.length-1 ? truncate_string : "")
+      end
+    end
+    return text
+  end
 
 end

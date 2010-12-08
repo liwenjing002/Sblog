@@ -16,6 +16,8 @@ Rails::Initializer.run do |config|
 end
 require 'delayed_job'
 require 'will_paginate'
+WillPaginate::ViewHelpers.pagination_options[:previous_label] = I18n.t("previous")
+WillPaginate::ViewHelpers.pagination_options[:next_label] = I18n.t("next")
 require 'tiny_mce'
 
 ActionMailer::Base.delivery_method = :smtp
