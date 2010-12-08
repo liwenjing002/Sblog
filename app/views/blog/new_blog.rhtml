@@ -34,7 +34,7 @@
                   {:class=>"input", "onchange" => remote_function(:with => "'father='+value",:update => 'next_select', :url => { :action => :select_with_ajax })}%>
                 <span id='next_select'></span>
                 <small>*</small>
-                <%= error_div(@blog, :blog_tags)%>
+                <%= error_div(@blog, :blog_type)%>
               </p>
 
               <p class="clearfix">

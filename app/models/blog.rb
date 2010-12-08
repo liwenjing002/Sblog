@@ -1,10 +1,16 @@
 class Blog < ActiveRecord::Base
+
+
+
   has_many :tags_in_blog
   has_many :tag, :through => :tags_in_blog
   belongs_to :user,:foreign_key => "owner_id"
 
   validates_presence_of :title,:message => "标题不为空"
   validates_presence_of :text,:message => "正文不为空"
+  validates_presence_of :blog_type,:message => "分类不为空"
+
+  validates_length_of :title, :maximum => 40,:message=>"标题太长，最多40个字"
 
   attr_accessor :blog_tags
   
