@@ -1,10 +1,10 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.column :login_name, :string
-      t.column :password, :string
-      t.column :alias_name,:string #别名
-      t.column :email,:string #别名
+      t.column :login_name, :string,:null => false
+      t.column :password, :string,:null => false
+      t.column :alias_name,:string,:null => false #别名
+      t.column :email,:string ,:null => false#别名
       t.timestamps
     end
   end
