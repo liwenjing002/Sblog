@@ -46,4 +46,11 @@ class ApplicationController < ActionController::Base
       redirect_to :controller=>"user",:action=>"login"
     end
   end
+
+
+  rescue_from Exception, :with => :error
+
+def error
+  render :file => "error/exception_error",:layout => "application"
+end
 end

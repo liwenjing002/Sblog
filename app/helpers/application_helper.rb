@@ -83,9 +83,19 @@ module ApplicationHelper
   end
 
 
-  def summary(text)
-    truncate_u(text,100)
+
+  def strip_html(text,len=0,endss="...")
+    if text.length>0
+      ss=text.gsub(/<\/?[^>]*>/,"")
+
+      if len>0 && ss.length>0
+        ss = truncate_u(ss,len,endss)
+      end
+    end
+    return ss
   end
+
+
 
 
   def truncate_u(text, length = 30, truncate_string = "   。 。 。")

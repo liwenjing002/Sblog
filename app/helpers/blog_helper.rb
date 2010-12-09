@@ -7,4 +7,8 @@ module BlogHelper
       }
       return types
   end
+
+  def get_acion_name
+    self.controller.action_name
+  end
 end

@@ -13,24 +13,36 @@ class Blog < ActiveRecord::Base
   validates_length_of :title, :maximum => 40,:message=>"标题太长，最多40个字"
 
   attr_accessor :blog_tags
+
+  after_create :split_tags
+  after_save :split_tags
   
-  def before_create
+
+  def validate
     if self.blog_tags != '' and self.blog_tags !=nil
       tags = self.blog_tags.split(/,/)
       if tags.length ==0
         errors.add(:blog_tags, "标签分隔出错，请检查")
+        elsif tags.length>8
+          errors.add(:blog_tags, "标签最多为8个")
       end
     end
   end
 
-  def after_create
+  def split_tags
     tags = self.blog_tags.split(/,/)
+    TagsInBlog.find_by_sql("delete from tags_in_blogs where blog_id =#{self.id}") #比较山寨
     tags.each{|tag_text|
       tag = Tag.find_by_text(tag_text)
-      tag = Tag.new({:text=>tag_text}) if tag==nil
-      tag.save
-      tagsInBlog = TagsInBlog.new({:blog_id=>self.id,:tag_id=>tag.id})
-      tagsInBlog.save
+      if tag==nil
+        tag = Tag.new({:text=>tag_text}) 
+        tag.save
+      end
+#      tagsInBlog = TagsInBlog.find_by_blog_id_and_tag_id(self.id,tag.id)
+#      if tagsInBlog==nil
+        tagsInBlog = TagsInBlog.new({:blog_id=>self.id,:tag_id=>tag.id})
+        tagsInBlog.save!
+#      end
     }
   end
 end

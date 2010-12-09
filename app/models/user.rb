@@ -34,6 +34,10 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest(password) if password
   end
 
+  def validate#修改默认的验证
+    errors.add(:password_comfire, "两次输入密码不一致") unless self.password_comfire== self.password
+  end
+
   def before_create
     # hash the pass before creating a author
     self.password = User.do_password_hash(self.password)

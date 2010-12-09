@@ -81,3 +81,7 @@ zh:
   previous: '<< 上一页'
   next: '>> 下一页'
   more: "更多"
+  edit: "编辑"
+  delete: "删除"
+  edit_blog: "编辑博客"
+  no blog: "找不到当前博客，该博客已被删除"

@@ -16,7 +16,7 @@ class BlogController < ApplicationController
       :theme_advanced_fonts => %w{宋体=宋体;黑体=黑体;仿宋=仿宋;楷体=楷体;隶书=隶书;幼圆=幼圆;Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats}, # 字体
       # :force_br_newlines => true, # 此选项强制编辑器将段落符号(P)替换成换行符(BR)。不建议用：ff下不好使，用了此选项后，输入内容的居中、清单或编号都被破坏。
       :plugins => %w{contextmenu paste media emotions table fullscreen}},
-    :only => [:new_blog])  # tiny_mce考虑的非常贴心，这里是限定哪些action中起用
+    :only => [:new_blog,:edit_blog])  # tiny_mce考虑的非常贴心，这里是限定哪些action中起用
 
   def list
     p params[:type]
@@ -36,6 +36,45 @@ class BlogController < ApplicationController
   end
 
 
+
+  def edit_blog   
+    if !request.post?
+      @blog = Blog.find_by_id(params[:blog_id])
+      tag_a =[]
+      @blog.tag.each{|tag|
+        tag_a << tag.text
+      }
+      @blog.blog_tags = tag_a.join(",")
+      render :action=> "new_blog"
+      return
+    end
+    
+    begin
+        @blog = Blog.find_by_id(params[:blog][:id])
+        @blog.title = params[:blog][:title]
+        @blog.blog_tags = params[:blog][:blog_tags]
+        @blog.text = params[:blog][:text]
+        if @blog.save
+          redirect_to :controller=>"home"
+        else
+          render :action=> "new_blog"
+        end
+    rescue
+      @error_msg = "no blog"
+    end
+  end
+
+  def delete_blog
+    begin
+      @blog = Blog.find_by_id(params[:blog_id])
+      @blog.delete
+      redirect_to :controller=>"home"
+    rescue
+       @error_msg = "博客无法删除，博客不存在或正在编辑"
+    end
+  end
+
+
   def select_with_ajax
     type_list = APP_CONFIG["type"]
     @types = []
@@ -51,5 +90,8 @@ class BlogController < ApplicationController
   def blog_detail
     @blog = Blog.find_by_id(params[:blog_id])
   end
+
+
+
 
 end
