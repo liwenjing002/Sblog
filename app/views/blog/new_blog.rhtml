@@ -8,15 +8,16 @@
   <div class="entry page">
     <div class="entry-top">
       <div class="entry-content">
-        <h2 class="title"><%=t "write_blog"%></h2>
+        <h2 class="title"><%=t "#{get_acion_name}"%></h2>
         <div class="clear"></div>
         <div class="page-separator"></div>
         <div class="post-content">
           <div id="create_new_post">
-            <% form_tag(:action =>"new_blog") do %>
+            <% form_tag(:action =>"#{get_acion_name}") do %>
+            <%= hidden_field 'blog', 'id'%>
               <p class="clearfix">
                 <label for="et_newpost_title" class="inputlable"><%= t  "title"%>:</label>
-                 <%= text_field 'blog', 'title',:class=>"input" %>
+                 <%= text_field 'blog', 'title',:class=>"input"%>
                <small>*</small>
                 <%= error_div(@blog, :title)%>
               </p>

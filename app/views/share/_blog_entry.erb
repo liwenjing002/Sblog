@@ -1,8 +1,8 @@
 <div class="entry">
   <div class="entry-top">
     <div class="entry-content">
-      <span class="comment-number"><%= link_to blog.replay_count,"#"%></span>
-      <h2 class="title"><%= link_to blog.title,"#"%></h2>
+      <span class="comment-number"><%= link_to blog.replay_count,"1"%></span>
+      <h2 class="title"><%= link_to blog.title,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%></h2>
       <span class="quote"></span>
       <div class="author">-- <%= link_to blog.user.alias_name+" ,","#"%>
         <%= format_date(blog.updated_at,"%Y-%m-%d")%>
@@ -23,7 +23,10 @@
         <p> <%= strip_html(blog.text,100)%></p>
          
           <h2>
-            <%= link_to t("more") ,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%></h2>
+            <%= link_to t("more") ,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%>
+            <%= link_to t("edit") ,:controller=>"blog",:action=>"edit_blog",:blog_id=>blog.id%>
+            <%= link_to t("delete") ,:controller=>"blog",:action=>"delete_blog",:blog_id=>blog.id%>
+          </h2>
         <%else%>
           <%= blog.text %>
         <%end%>
