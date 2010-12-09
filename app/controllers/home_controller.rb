@@ -19,7 +19,7 @@ class HomeController < ApplicationController
     @blogs =Blog.paginate :per_page => 10, :page => params[:page]||1,
       :conditions => ['id in ( select blog_id from
                                tags_in_blogs
-                             where tag_id like ?)',params[:tag]||'%' ],
+                             where tag_id = ?)',params[:tag].to_i ],
       :order =>order
     tag_now = Tag.find_by_id(params[:tag])
     get_random_tag(tag_now)
