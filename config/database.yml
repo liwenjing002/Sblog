@@ -1,10 +1,21 @@
 development:
-  adapter: sqlite3
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
   database: blog_development
+
 test:
-  adapter: sqlite3
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
   database: blog_test
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
   database: blog_production
+

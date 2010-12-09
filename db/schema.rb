@@ -13,8 +13,8 @@ ActiveRecord::Schema.define(:version => 20101207075835) do
 
   create_table "blogs", :force => true do |t|
     t.string   "title"
-    t.string   "text"
-    t.integer  "owner_id"
+    t.text   "text"
+    t.integer  "users_id"
     t.string   "blog_type"
     t.integer  "replay_count"
     t.datetime "created_at"
