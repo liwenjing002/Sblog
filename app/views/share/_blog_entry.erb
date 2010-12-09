@@ -20,11 +20,12 @@
 
       <div id ="post-content" class="post-content">
         <%if !all%>
-        <%= summary(blog.text) %>
-        <h2>
-<%= link_to t("more") ,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%></h2>
+        <p> <%= strip_html(blog.text,100)%></p>
+         
+          <h2>
+            <%= link_to t("more") ,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%></h2>
         <%else%>
-        <%= blog.text %>
+          <%= blog.text %>
         <%end%>
         <div class="clear"></div>
       </div>

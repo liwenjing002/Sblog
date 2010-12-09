@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
+  database: blog_development
+
+test:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
+  database: blog_test
+
+production:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: 123456
+  database: blog_production
+
