@@ -4,7 +4,8 @@ class EmailerController < ApplicationController
     from = email["from"]
     subject = email["subject"]
     message = email["message"]
-    Mailer.delay.deliver_send(from, subject, message)
+    Mailer.delay.deliver_send(from, subject, message) if @@delay_job
+    Mailer.deliver_send(from, subject, message) if !@@delay_job
     return if request.xhr?
     render :text => 'Message sent successfully'
   end
@@ -18,7 +19,9 @@ class EmailerController < ApplicationController
     subject = email["subject"]
     message = email["message"]
     to =  email["recipients"]
-    Mailer.delay.deliver_send(from,to ,subject, message)
+    Mailer.delay.deliver_send(from,to ,subject, message) if @@delay_job
+    Mailer.deliver_send(from,to ,subject, message) if !@@delay_job
+
     flash[:notice] =I18n.t('email send')
   end
 end
