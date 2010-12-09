@@ -1,12 +1,6 @@
  <div id="header-bottom">
 <div class="container">
   <%=head_content%>
-  <div id="search-bar">
-    <form method="get" id="searchform" action="http://www.elegantthemes.com/preview/AskIt">
-      <input type="text" value="search this site..." name="s" id="searchinput"/>
-      <input type="image" src="/images/search-icon.png" id="searchsubmit"/>
-    </form>
-
-  </div> <!-- end #search-bar -->
 </div> <!-- end .container -->
+ <%= render(:partial => "share/search_bar") %>
 </div>

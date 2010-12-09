@@ -106,13 +106,13 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
 
 ul#secondary-menu {float: left; }
-#search-bar { float: right; background: url(/images/search-bg.png) no-repeat; width: 152px; height: 33px; margin-top: 11px; }
+#search-bar { float: right; background: url(/images/search-bg.png) no-repeat; width: 450px; height: 33px; margin-top: 11px; }
 #search-bar #searchinput { background: none; border: none; float: left; margin: 8px 6px 0 0px; width: 100px; padding-left: 15px; font-size: 11px; font-family: Arial, Verdana, sans-serif; color: #7d7d7d; text-shadow: 1px 1px 1px #fff; font-style: italic; }
 #search-bar #searchsubmit { margin-top: 10px; }
 #content {background: url(/images/content-bg.png); position:relative;}
 #content .container { padding-top: 40px; padding-bottom:30px; }
 #right-shadow {background: url(/images/right-shadow.png) repeat-y top right; }
-#top-shadow { background:url("/images/top-shadow.png") repeat-x; height:74px; left:0; position:absolute; top:0; width:100%; }
+#top-shadow {text-align: left; margin: 0 auto; width: 960px; position: relative;}
 #main-area {float: left; width: 710px;}
 #main-tabs { background: url(/images/separator-bg.png) no-repeat bottom left; margin-bottom: 25px; padding-bottom: 1px; }
 ul#main-tabbed-area li { float: left; position: relative; margin-right:4px; }
@@ -145,9 +145,10 @@ div.tags a { background: url(/images/tag-bg.png) no-repeat top left; display: bl
 div.tags a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
 div.tags a:hover { text-decoration: none; color: #494949; }
 
-div.tags_bar { padding-bottom: 7px;color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px;}
+div.tags_bar {float: left;width: 710px;margin-top: 11px; padding-bottom: 7px;color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px;}
 div.tags_bar a { background: url(/images/tag-bg.png) no-repeat top left; display: block; height: 28px; padding-left: 16px; float: left; font-size: 14px; color: #777676; font-family: Georgia; font-style: italic; text-shadow: 1px 1px 1px #fff; line-height: 23px; margin-right: 8px; }
 div.tags_bar a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
+div.tags_bar li.select a span {color: #2279d9;font-size: 15px}
 div.tags_bar a:hover { text-decoration: none; color: #494949; }
 
 #breadcrumbs { color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px; }

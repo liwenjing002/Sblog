@@ -26,6 +26,16 @@ class Blog < ActiveRecord::Base
         elsif tags.length>8
           errors.add(:blog_tags, "标签最多为8个")
       end
+      tags.each{|tag|
+        temp = tag.split(//)
+        chinese_num = 0
+        temp.each{|c|
+          chinese_num +=1 if c.length>1
+        }#判断中文个数比较山寨，暂时先用用
+        errors.add(:blog_tags, "单个标签长度最长5个汉字或15个字母") if chinese_num>5 or tag.length>15
+        return
+      }
+
     end
   end
 

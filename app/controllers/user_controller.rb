@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-
+   layout "temp2"
   def login
     @user_login = User.new(params[:user])
     @user = User.new()

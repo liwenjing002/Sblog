@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+   layout "temp2"
   uses_tiny_mce( :options => {
       :theme => 'advanced',  # 皮肤
       :language => 'zh',  # 中文界面
@@ -45,15 +46,15 @@ class BlogController < ApplicationController
         tag_a << tag.text
       }
       @blog.blog_tags = tag_a.join(",")
+      @sceond_type =  @blog.blog_type if @blog.blog_type.length >1
+      @blog.blog_type = @blog.blog_type[0,1]
       render :action=> "new_blog"
       return
     end
     
     begin
-        @blog = Blog.find_by_id(params[:blog][:id])
-        @blog.title = params[:blog][:title]
-        @blog.blog_tags = params[:blog][:blog_tags]
-        @blog.text = params[:blog][:text]
+       @blog = Blog.update(params[:blog][:id],params[:blog])
+       @blog.blog_type = params["type2"][0] if params["type2"]
         if @blog.save
           redirect_to :controller=>"home"
         else

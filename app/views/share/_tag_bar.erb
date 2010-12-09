@@ -1,7 +1,22 @@
 <div class="tags_bar">
+  <ul>
   <%  @tags.each do |tag|%>
-    <%= link_to_remote("<span>#{tag.text}</span>",\
+
+
+   <%if tag == @tags.last%>
+    <li class="select">
+  <%= link_to_remote("<span>#{tag.text}</span>",\
+        :update => "main-area",\
+        :url=>{ :controller => "home",
+        :tag=>tag.id},:class=>"select") %>
+    </li>
+  <%else%>
+    <li>
+  <%= link_to_remote("<span>#{tag.text}</span>",\
         :update => "main-area",\
         :url=>{ :controller => "home",:tag=>tag.id}) %>
+    </li>
   <%end%>
+  <%end%>
+  </ul>
 </div> <!-- end .tags -->
