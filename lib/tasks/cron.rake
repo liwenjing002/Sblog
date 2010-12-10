@@ -4,7 +4,7 @@ task :cron => :environment do
    puts "send email to everyone"
     users = User.find(:all)
     users.each{|user|
-    from = "liwenjingabc@gmail.com"
+    from = APP_CONFIG["my_email"]
     subject = "test emial everyday"
     message = "test emial everyday"
     to =  user.email
