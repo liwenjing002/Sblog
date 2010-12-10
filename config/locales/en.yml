@@ -64,8 +64,9 @@ en:
   write_blog: "write blog"
   signup: "signup"
   html_title: "S Blog Just slowly"
+  all: 'all'
   life: "life"
-  arts: arts"
+  arts: "arts"
   technology: "technology"
   computer: "computer"
   Digital: "Digital"
@@ -78,3 +79,21 @@ en:
   blog_type: 'blog type'
   previous: '<< previous'
   next: '>> next'
+  more: "more"
+  edit: "edit"
+  delete: "delete"
+  edit_blog: "edit blog"
+  no blog: "no blog maybe the blog is deleted"
+  archives: "Archives"
+  logo_msg: 'Peace,Elegant,Taste of the article'
+  login_name_null: 'login name Is not empty'
+  password_null: 'password Is not empty'
+  password_comfire_null: 'password comfire Is not empty'
+  email_null: 'email Is not empty'
+  unique_login_name: 'login has Be used'
+  unique_emial: 'email has Be used'
+  format_email: 'enter the correct email format'
+  format_login_name: 'login name format:start with letter，length 5-16，allow letter num and underscores'
+  format_password: 'password format:ength 5-16,allow letter num and underscores'
+  no_login_name: 'no user with the login name'
+  wrong_password: 'wrong passord,please enter again or Forgot Password'

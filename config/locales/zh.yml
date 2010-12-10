@@ -86,3 +86,15 @@ zh:
   edit_blog: "编辑博客"
   no blog: "找不到当前博客，该博客已被删除"
   archives: "历史"
+  logo_msg: '宁静,优雅,品味文章'
+  login_name_null: '登录名不为空'
+  password_null: '密码不为空'
+  password_comfire_null: '密码重复不为空'
+  email_null: '邮箱地址不为空'
+  unique_login_name: '登录名已经被使用'
+  unique_emial: '邮箱已经被使用'
+  format_email: '请输入正确的邮箱格式'
+  format_login_name: '登录名格式:字母开头，允许5-16字节，允许字母数字下划线'
+  format_password: '密码格式:允许6-16字节，允许字母数字下划线'
+  no_login_name: '不存在该用户'
+  wrong_password: '密码错误，请重新输入或找回密码'
