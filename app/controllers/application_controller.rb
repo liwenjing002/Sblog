@@ -74,7 +74,7 @@ end
 def init_blogs
   @blogs =Blog.paginate :per_page => 5, :page => 1
 
-   @date_list = Blog.find_by_sql("select to_char(updated_at,'YYYY-MM') dates \
+   @date_list = Blog.find_by_sql("select to_char(updated_at,'YYYY-MM') as dates \
                     from blogs  group by dates order by dates asc limit 10")
 end
 
