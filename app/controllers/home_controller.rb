@@ -44,7 +44,6 @@ class HomeController < ApplicationController
       sql = "select * from tags order by random() limit #{num}"
     end
     @tags = Tag.find_by_sql(sql)
-    @tags << tag_now if tag_now
     
   end
 
