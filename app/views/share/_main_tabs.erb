@@ -7,7 +7,7 @@
     <li id="main_tab<%= way["value"] %>" class="<%= get_tabs_class(way["value"],1)%>">
       <%= link_to_remote("<span>#{t(way['value'])}</span>",\
             :update => "main-area",\
-            :url=>{ :controller => "home",:way=>way["value"],:tag=>params[:tag]}) %>
+            :url=>{ :controller => "home",:way=>way["value"],:tag=>params[:tag],:date=>params[:date]}) %>
     </li>
     <%end%>
   </ul>

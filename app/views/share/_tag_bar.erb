@@ -8,13 +8,13 @@
   <%= link_to_remote("<span>#{tag.text}</span>",\
         :update => "main-area",\
         :url=>{ :controller => "home",
-        :tag=>tag.id},:class=>"select") %>
+        :tag=>tag.id,:date=>params[:date]},:class=>"select") %>
     </li>
   <%else%>
     <li>
   <%= link_to_remote("<span>#{tag.text}</span>",\
         :update => "main-area",\
-        :url=>{ :controller => "home",:tag=>tag.id}) %>
+        :url=>{ :controller => "home",:tag=>tag.id,:date=>params[:date]}) %>
     </li>
   <%end%>
   <%end%>

@@ -41,7 +41,8 @@ class ApplicationController < ActionController::Base
     if session[:is_login]==nil &&request.request_uri!= "/user/login"&&
         request.parameters[:controller] != "home" && session[:return_to] != "/"&&
         request.parameters[:controller] !='user'&&
-        request.parameters[:controller]!= "about"
+        request.parameters[:controller]!= "about"&&
+        (request.parameters[:action]!='blog_detail')
       session[:return_to] = request.request_uri
       redirect_to :controller=>"user",:action=>"login"
     end
