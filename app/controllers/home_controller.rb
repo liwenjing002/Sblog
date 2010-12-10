@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   def index
     type = params[:type]if params[:type] != 'o'
     @blogs = Blog.paginate :per_page => 5, :page => params[:page]||1,
@@ -17,33 +16,37 @@ class HomeController < ApplicationController
     order = "replay_count asc" if params[:way]=="popular"
     order = "RANDOM()" if params[:way]=="random"
     
-    conditions = nil
-    conditions =  ['id in ( select blog_id from
+    sql = 'id in ( select blog_id from
                                tags_in_blogs
-                             where tag_id = ?)',params[:tag].to_i ] if params[:tag]
+                             where tag_id = ?)'
+
+    sql +=" and TO_CHAR(updated_at,'YYYY-MM') = '#{params[:date]}'" if params[:date]
+
+    conditions = nil
+    conditions =  [sql,params[:tag].to_i ] if params[:tag]
 
     @blogs =Blog.paginate :per_page => 5, :page => params[:page]||1,
       :conditions =>conditions,
       :order =>order
     tag_now = Tag.find_by_id(params[:tag])
     get_random_tag(tag_now)
-    render :template => "home/search_tags",:layout => false 
+    render :template => "home/search_tags",:layout => false if !params[:left]
+    render :template => "home/search_left_tags",:layout => false  if params[:left]
   end
 
 
-  def get_random_tag(tag_now=nil)
+  def get_random_tag(tag_now=nil,num= 10)
     @tag = tag_now.id if tag_now
     sql = ''
     if tag_now
-      sql = "select * from tags where id != #{tag_now.id} order by random() limit 9"
+      sql = "select * from tags where id != #{tag_now.id} order by random() limit #{num-1}"
     else
-      sql = "select * from tags order by random() limit 10"
+      sql = "select * from tags order by random() limit #{num}"
     end
     @tags = Tag.find_by_sql(sql)
     @tags << tag_now if tag_now
     
   end
 
-  
 
 end

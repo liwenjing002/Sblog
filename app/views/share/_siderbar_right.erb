@@ -13,51 +13,23 @@
         <%= link_to "<span>#{t("write_blog")}</span>",{:controller=>'blog',:action=>'new_blog'},:id=>"call_to_action"%>
       </div>
       <div id="tabbed" class="sidebar-block ui-tabs ui-widget ui-widget-content ui-corner-all">
-        <ul id="tabbed-area" class="clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-          <li class="first ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="http://www.elegantthemes.com/preview/AskIt/#recent-tabbed">Recent</a></li>
-          <li class="second ui-state-default ui-corner-top"><a href="http://www.elegantthemes.com/preview/AskIt/#popular-tabbed">Popular</a></li>
-          <li class="last ui-state-default ui-corner-top"><a href="http://www.elegantthemes.com/preview/AskIt/#random-tabbed">Random</a></li>
-        </ul>
+        <!-- 加载博客筛选栏 -->
+        <%= render(:partial => "share/left_tabs") %>
 
-        <div id="recent-tabbed" class="widget-content ui-tabs-panel ui-widget-content ui-corner-bottom">
-          <ul>
-            <li class="clearfix"><span class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=22">Where is the best place to l...</a></span>
-              <p class="post-info">Posted by
-                <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach</a>on Nov 17, 2010
-              </p>
-              <span class="widget-comment-number">3</span>
-            </li>
-          </ul>
-        </div> <!-- end #recent-tabbed -->
-
-        <div id="popular-tabbed" class="widget-content ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
-          <ul>
-            <li class="clearfix">
-              <span class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=14">What is the best WordPress e...</a></span>
-              <p class="post-info">Posted by <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach</a> on Nov 17, 2010</p>
-              <span class="widget-comment-number">5</span>
-            </li>
-            <li class="clearfix">
-              <span class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=16">What is the best way to crea...</a></span>
-              <p class="post-info">Posted by <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach</a> on Nov 17, 2010</p>
-              <span class="widget-comment-number">5</span>
-            </li>																																			</ul>
-        </div> <!-- end #recent-tabbed -->
-
-        <div id="random-tabbed" class="widget-content ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
-          <ul>
-            <li class="clearfix">
-              <span class="title"><a href="http://www.elegantthemes.com/preview/AskIt/?p=10">How do you make oil paint dr...</a></span>
-              <p class="post-info">Posted by <a href="http://www.elegantthemes.com/preview/AskIt/?author=1" title="Posts by Nick Roach">Nick Roach</a> on Nov 17, 2010</p>
-              <span class="widget-comment-number">4</span>
-            </li>																															</ul>
-        </div> <!-- end #recent-tabbed -->
+       <!-- 加载博客列表 -->
+        <%= render(:partial => "home/right_content") %>
+      <!-- end #recent-tabbed -->
       </div> <!-- end .sidebar-block-->
 
-      <div id="archives-3" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>
+      <div id="archives-3" class="widget widget_archive"><h4 class="widgettitle"><%= t 'archives' %></h4>
         <div class="widget-content">
           <ul>
-            <li><a href="http://www.elegantthemes.com/preview/AskIt/?m=201011" title="November 2010">November 2010</a></li>
+            <li>
+              <%@date_list.each do |date|%>
+              <%= link_to_remote("#{format_string_date(date.dates)}",\
+              :update => "main-area",\
+              :url=>{ :controller => "home",:action=>"tag_search",:date => "#{date.dates}"}) %>
+              <%end%></li>
           </ul>
         </div>
       </div><!-- end .widget -->

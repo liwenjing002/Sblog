@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  before_filter :set_locale,:is_login
+  before_filter :set_locale,:is_login,:init_blogs
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
@@ -48,23 +48,34 @@ class ApplicationController < ActionController::Base
   end
 
 
-  rescue_from Exception, :with => :error
+#  rescue_from Exception, :with => :error
 
 def error
   render :file => "error/exception_error",:layout => "temp2"
 end
 
-protected
- def rescue_action(exception)
-     if RAILS_ENV == 'production'
-       title = "[Exception Notify] from sblog"
-       Mailer.deliver_system_exception title, exception
-       from =  APP_CONFIG["my_email"]
-      subject = "[Exception Notify] from sblog"
-      message = exception
-      to =  APP_CONFIG["my_email"]
-       Mailer.delay.deliver_send(from,to ,subject, message)
-     end
-     super exception  #super
-   end
+#protected
+# def rescue_action(exception)
+#     if RAILS_ENV == 'production'
+#       title = "[Exception Notify] from sblog"
+#       Mailer.deliver_system_exception title, exception
+#       from =  APP_CONFIG["my_email"]
+#      subject = "[Exception Notify] from sblog"
+#      message = exception
+#      to =  APP_CONFIG["my_email"]
+#       Mailer.delay.deliver_send(from,to ,subject, message)
+#     end
+#     super exception  #super
+#   end
+
+
+#初始化一些博客，由于右边的工具栏，几乎一直存在导致每个页面都需要@blogs对象和时间列表@date_list
+def init_blogs
+  @blogs =Blog.paginate :per_page => 5, :page => 1
+
+   @date_list = Blog.find_by_sql("select to_char(updated_at,'YYYY-MM') dates \
+                    from blogs  group by dates order by dates asc limit 10")
+end
+
+
 end

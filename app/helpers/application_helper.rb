@@ -83,6 +83,14 @@ module ApplicationHelper
   end
 
 
+  def format_string_date(string,patt="%Y-%m")
+   date =  Date._strptime(string,patt)
+   date =Time.mktime(date[:year],date[:month])
+   format_date(date,"%B %Y") if I18n.locale.to_s =='en'
+   format_date(date,"%m月  %Y") if I18n.locale.to_s =='zh'
+  end
+
+
 
   def strip_html(text,len=0,endss="...")
     if text.length>0

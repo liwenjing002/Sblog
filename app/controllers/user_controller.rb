@@ -1,9 +1,13 @@
 class UserController < ApplicationController
-   
+
+
   def login
     @user_login = User.new(params[:user])
     @user = User.new()
-    return unless request.post?
+    unless request.post?
+#    render :layout => false
+    return
+    end
     if @user_login.email&& @user_login.email!= ''
       return redirect_to :action=>"forget_password",:email=> @user_login.email
     end

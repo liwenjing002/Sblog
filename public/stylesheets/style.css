@@ -196,11 +196,11 @@ p#create_done { font-size: 18px; font-family: 'Yanone Kaffeesatz', Arial, sans-s
 
 #tabbed-area { background: url(/images/tabbed_area_bg.png) no-repeat 21px 7px; padding: 5px 15px 13px 35px; }
 #tabbed-area li { float: left; margin-left: 15px; padding-left: 0px !important; position: relative; }
-#tabbed-area a { color: #a5a5a5; font-size: 20px; text-shadow: 1px 1px 1px #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; }
+#tabbed-area a { color: #a5a5a5; font-size: 15px; text-shadow: 1px 1px 1px #fff; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; }
 #tabbed-area a:hover, #tabbed-area li.ui-state-active a { color: #525252; text-decoration: none; }
 
 #tabbed span.title { display:block; margin-bottom:-5px; }
-#tabbed span.title a { color: #424242; }
+#tabbed span.title a { color: black; }
 #tabbed p.post-info { color: #9d9d9d; font-size: 11px; font-family: Georgia, serif; font-style: italic; text-shadow: 1px 1px 1px #fff; }
 #tabbed p.post-info a { font-weight: bold; color: #9D9D9D; }
 #tabbed p.post-info a:hover { color: #000; }

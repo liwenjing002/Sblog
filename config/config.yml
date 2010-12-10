@@ -16,7 +16,7 @@ type:
       - value: 'Industry'
         code: 'c3'
  #查看博客方法，随机，最新，最热门之类
-wap:
+way:
   - value: 'recent'
   - value: 'popular'
   - value: 'unreply'

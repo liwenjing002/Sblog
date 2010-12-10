@@ -1,0 +1,21 @@
+<%#
+博客列表，只有标题无摘要
+%>
+  <div id="recent-tabbed" class="widget-content ui-tabs-panel ui-widget-content ui-corner-bottom">
+  <ul>
+  <%@blogs.each do|blog|%>
+    <li class="clearfix">
+      <span class="title"><%= link_to blog.title,:controller=>"blog",:action=>"blog_detail",:blog_id=>blog.id%>
+      </span>
+    <p class="post-info"><%= link_to blog.user.alias_name+" ,","#"%>
+        <%= format_date(blog.updated_at,"%Y-%m-%d")%>
+        <%= link_to get_type_name(blog.blog_type),"#"%>
+     </p>
+     <span class="widget-comment-number">3</span>
+      <!-- 加载一个博客 -->
+
+     </li>
+  <%end%>
+      </ul>
+
+</div> <!-- end #recent-tabbed -->

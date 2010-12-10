@@ -1,0 +1,11 @@
+<ul id="tabbed-area" class="clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+  <%APP_CONFIG["way"].each do |way|%>
+
+    <li id="main_tab<%= way["value"] %>" class="ui-state-default ui-corner-top<%= get_tabs_class(way["value"],2)%>">
+      <%= link_to_remote("#{t(way['value'])}",\
+          :update => "tabbed",\
+          :url=>{ :controller => "home",:action=>"tag_search",:way=>way["value"],:left=>true}) %>
+    </li>
+  <%end%>
+</ul>
