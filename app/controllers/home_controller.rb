@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
   def index
     type = params[:type]if params[:type] != 'o'
-    @blogs = Blog.paginate :per_page => 10, :page => params[:page]||1,
+    @blogs = Blog.paginate :per_page => 5, :page => params[:page]||1,
       :conditions => ['blog_type like ?',type||"%" ],
       :order =>"created_at desc"
     get_random_tag(params[:tag])
@@ -22,7 +22,7 @@ class HomeController < ApplicationController
                                tags_in_blogs
                              where tag_id = ?)',params[:tag].to_i ] if params[:tag]
 
-    @blogs =Blog.paginate :per_page => 10, :page => params[:page]||1,
+    @blogs =Blog.paginate :per_page => 5, :page => params[:page]||1,
       :conditions =>conditions,
       :order =>order
     tag_now = Tag.find_by_id(params[:tag])

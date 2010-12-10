@@ -48,9 +48,23 @@ class ApplicationController < ActionController::Base
   end
 
 
- # rescue_from Exception, :with => :error
+  rescue_from Exception, :with => :error
 
 def error
   render :file => "error/exception_error",:layout => "temp2"
 end
+
+protected
+ def rescue_action(exception)
+     if RAILS_ENV == 'production'
+       title = "[Exception Notify] from sblog"
+       Mailer.deliver_system_exception title, exception
+       from =  APP_CONFIG["my_email"]
+      subject = "[Exception Notify] from sblog"
+      message = exception
+      to =  APP_CONFIG["my_email"]
+       Mailer.delay.deliver_send(from,to ,subject, message)
+     end
+     super exception  #super
+   end
 end
