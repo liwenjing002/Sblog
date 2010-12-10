@@ -97,3 +97,4 @@ en:
   format_password: 'password format:ength 5-16,allow letter num and underscores'
   no_login_name: 'no user with the login name'
   wrong_password: 'wrong passord,please enter again or Forgot Password'
+  import_notify: 'The current site is still under development, are likely to clean up the data at any time, you can just Visit the website, do not write the blog,if the website is finished,I will notify everyone who leave the message for me(you can leave the message in the "CONNTACT ME" or send to liwenjingabc@gmail.com)'
