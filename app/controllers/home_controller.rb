@@ -35,13 +35,13 @@ class HomeController < ApplicationController
   end
 
 
-  def get_random_tag(tag_now=nil,num= 10)
+  def get_random_tag(tag_now=nil,num= 15)
     @tag = tag_now if tag_now
     sql = ''
     if tag_now
       sql = "select * from tags where id != #{tag_now.id} order by random() limit #{num-1}"
     else
-      sql = "select * from tags order by random() limit #{num}"
+      sql = "select * from tags order by random() limit #{num-1}"
     end
     @tags = Tag.find_by_sql(sql)
     
