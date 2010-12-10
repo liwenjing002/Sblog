@@ -146,7 +146,7 @@ div.tags a { background: url(/images/tag-bg.png) no-repeat top left; display: bl
 div.tags a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
 div.tags a:hover { text-decoration: none; color: #494949; }
 
-div.tags_bar {float: left;width: 710px;margin-top: 11px; padding-bottom: 7px;color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px;}
+div.tags_bar {float: left;width: 710px;margin-top: 0px; padding-bottom: 7px;color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 0px;}
 div.tags_bar a { background: url(/images/tag-bg.png) no-repeat top left; display: block; height: 28px; padding-left: 16px; float: left; font-size: 14px; color: #777676; font-family: Georgia; font-style: italic; text-shadow: 1px 1px 1px #fff; line-height: 23px; margin-right: 8px; }
 div.tags_bar a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
 div.tags_bar li.select a span {color: #2279d9;font-size: 15px}
