@@ -10,10 +10,9 @@ class HomeController < ApplicationController
 
   
   def tag_search
-    order = "created_at asc" if  params[:way]=="recent"
-    order = "replay_count asc" if params[:way]=="popular"
-    order = "replay_count desc,created_at desc" if params[:way]=="unreply"
-    order = "replay_count asc" if params[:way]=="popular"
+    order = "created_at desc" if  params[:way]=="recent"
+    order = "replay_count desc" if params[:way]=="popular"
+    order = "replay_count asc,created_at desc" if params[:way]=="unreply"
     order = "RANDOM()" if params[:way]=="random"
     
     sql = 'id in ( select blog_id from
