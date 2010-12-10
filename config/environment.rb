@@ -34,3 +34,5 @@ ActionMailer::Base.smtp_settings = {
 ActionView::Base.field_error_proc = Proc.new do |html_tag, instance_tag|
   "<span class='field_error'>#{html_tag}</span>"
 end
+
+DELAY_JOB = false #我xheroku的work要钱的，

@@ -29,7 +29,8 @@ class UserController < ApplicationController
        session[:login_id] = @user.id
       session[:login_name] = @user.login_name
       flash[:notice] = "Hello! #{@user.alias_name||@user.login_name},"+ I18n.t('welcome_word')
-      Mailer.delay.deliver_signup_send(@user) 
+      Mailer.delay.deliver_signup_send(@user) if DELAY_JOB
+      Mailer.deliver_signup_send(@user) if !DELAY_JOB
       redirect_to :controller => "home"
     else
       @signup= true

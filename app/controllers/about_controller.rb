@@ -14,7 +14,8 @@ class AboutController < ApplicationController
     subject = email["subject"]
     message = email["message"]
     to =  email["recipients"]
-    Mailer.delay.deliver_send(from,to ,subject, message) 
+    Mailer.delay.deliver_send(from,to ,subject, message) if DELAY_JOB
+    Mailer.deliver_send(from,to ,subject, message) if !DELAY_JOB
     
   end
 end
