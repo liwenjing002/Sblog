@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-
+   layout "temp2"
   def login
     @user_login = User.new(params[:user])
     @user = User.new()
@@ -27,7 +27,8 @@ class UserController < ApplicationController
        session[:login_id] = @user.id
       session[:login_name] = @user.login_name
       flash[:notice] = "Hello! #{@user.alias_name||@user.login_name},"+ I18n.t('welcome_word')
-      Mailer.delay.deliver_signup_send(@user)
+      Mailer.delay.deliver_signup_send(@user) if @@delay_job
+      Mailer.deliver_signup_send(@user) if !@@delay_job
       redirect_to :controller => "home"
     else
       @signup= true

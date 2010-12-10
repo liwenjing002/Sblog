@@ -30,9 +30,9 @@ ActionMailer::Base.smtp_settings = {
   :user_name => "liwenjingabc@gmail.com",
   :password => "19881228"
 }
-#if defined?(Footnotes)
-#    Footnotes::Filter.prefix = 'txmt://open?url=file://%s&amp;amp;line=%d&amp;amp;column=%d'
-#  end
+
 ActionView::Base.field_error_proc = Proc.new do |html_tag, instance_tag|
   "<span class='field_error'>#{html_tag}</span>"
-end  
+end
+
+@@delay_job = false

@@ -14,11 +14,11 @@
         <div class="post-content">
           <div id="create_new_post">
             <% form_tag(:action =>"#{get_acion_name}") do %>
-            <%= hidden_field 'blog', 'id'%>
+              <%= hidden_field 'blog', 'id'%>
               <p class="clearfix">
                 <label for="et_newpost_title" class="inputlable"><%= t  "title"%>:</label>
-                 <%= text_field 'blog', 'title',:class=>"input"%>
-               <small>*</small>
+                <%= text_field 'blog', 'title',:class=>"input"%>
+                <small>*</small>
                 <%= error_div(@blog, :title)%>
               </p>
 
@@ -33,7 +33,11 @@
                 <label for="et_newpost_tags" class="inputlable"><%= t "blog_type" %>:</label>
                 <%=select 'blog', 'blog_type',get_child_type,{:include_blank => '--请选择--'},
                   {:class=>"input", "onchange" => remote_function(:with => "'father='+value",:update => 'next_select', :url => { :action => :select_with_ajax })}%>
-                <span id='next_select'></span>
+                <span id='next_select'>
+                  <%if @sceond_type%>
+                    <%= select( 'type2','', get_child_type(@blog.blog_type),{:selected =>  @sceond_type},:class=>"input") %>
+                  <%end%>
+                </span>
                 <small>*</small>
                 <%= error_div(@blog, :blog_type)%>
               </p>
@@ -42,10 +46,10 @@
                 <label for="et_newpost_content" class="inputlable"><%= t "content" %>:</label>
                 <%= error_div(@blog, :text)%>
               </p>
-               <%= text_area 'blog', 'text' , :class => "mceEditor input" %>
+              <%= text_area 'blog', 'text' , :class => "mceEditor input" %>
               <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
               <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
-          <% end -%>
+            <% end -%>
           </div> <!-- end #create_new_post -->
 
           <div class="clear"></div>

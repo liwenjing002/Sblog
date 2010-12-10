@@ -22,8 +22,15 @@
     <!-- 加载分类导航按钮 -->
     <%= render(:partial => "layouts/header_content") %>
 
-
-    <%= @content_for_layout %>
+    <div id="content">
+      <div id="right-shadow">
+        <div id="top-shadow">
+        </div>
+        <div class="container clearfix">
+          <%= @content_for_layout %>
+        </div>
+      </div> <!-- end .container -->
+    </div> 	<!-- end #right-shadow -->
 
     <!-- 加载foot部分网页 -->
     <%= render(:partial => "layouts/foot_content") %>

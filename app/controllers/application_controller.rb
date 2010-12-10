@@ -48,9 +48,9 @@ class ApplicationController < ActionController::Base
   end
 
 
-  rescue_from Exception, :with => :error
+ # rescue_from Exception, :with => :error
 
 def error
-  render :file => "error/exception_error",:layout => "application"
+  render :file => "error/exception_error",:layout => "temp2"
 end
 end
