@@ -19,8 +19,7 @@ class EmailerController < ApplicationController
     subject = email["subject"]
     message = email["message"]
     to =  email["recipients"]
-    Mailer.delay.deliver_send(from,to ,subject, message) if @@delay_job
-    Mailer.deliver_send(from,to ,subject, message) if !@@delay_job
+    Mailer.delay.deliver_send(from,to ,subject, message) 
 
     flash[:notice] =I18n.t('email send')
   end
