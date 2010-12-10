@@ -5,8 +5,8 @@ task :cron => :environment do
     users = User.find(:all)
     users.each{|user|
     from = APP_CONFIG["my_email"]
-    subject = "test emial everyday"
-    message = "test emial everyday"
+    subject = "test emmial everyday"
+    message = "test email everyday"
     to =  user.email
     Mailer.delay.deliver_send(from,to ,subject, message)
     }

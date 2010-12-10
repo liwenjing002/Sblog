@@ -15,15 +15,25 @@
     <%= include_tiny_mce_if_needed %>
   </head>
   <body id="home">
-
     <!-- 加载顶部导航链接 -->
     <%= render(:partial => "layouts/header_inner") %>
-
     <!-- 加载分类导航按钮 -->
     <%= render(:partial => "layouts/header_content") %>
+    <div id="content">
+      <div id="right-shadow">
+        <div id="top-shadow">
+        </div>
+        <div class="container clearfix">
+          <%= @content_for_layout %>
+          <!-- 加载右部工具栏 -->
+          <%= render(:partial => "share/siderbar_right") %>
+        </div>
+      </div> <!-- end .container -->
+    </div> 	<!-- end #right-shadow -->
 
 
-    <%= @content_for_layout %>
+
+
 
     <!-- 加载foot部分网页 -->
     <%= render(:partial => "layouts/foot_content") %>

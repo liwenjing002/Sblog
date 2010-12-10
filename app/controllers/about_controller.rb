@@ -1,5 +1,5 @@
 class AboutController < ApplicationController
-  layout "temp2"
+ 
   def msg
 
   end
