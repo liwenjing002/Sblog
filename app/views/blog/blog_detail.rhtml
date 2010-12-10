@@ -1,7 +1,9 @@
 <div id="main-area">
   <div id="middle">
     <div id="breadcrumbs">
-      <a href="/home"><%= t 'home' %></a>
+        <%= link_to_remote("#{ t 'home'}",\
+          :update => "main-area",\
+          :url=>{ :controller => "home",:action=>"tag_search",:way=>"recent"}) %>
       <span class="raquo">»</span>
       <%=link_to(t(get_type_by_code(@blog.blog_type)["value"]),"/home?type=#{@blog.blog_type}")%>
       <span class="raquo">»</span>

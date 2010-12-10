@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @blogs = Blog.paginate :per_page => 5, :page => params[:page]||1,
       :conditions => ['blog_type like ?',type||"%" ],
       :order =>"created_at desc"
-    get_random_tag(params[:tag])
+    get_random_tag(nil)
     redirect_to :action=>"tag_search",:tag=>  params[:tag],:way=>params[:way]||"recent" if params[:tag]or params[:way]
   end
 
@@ -36,7 +36,7 @@ class HomeController < ApplicationController
 
 
   def get_random_tag(tag_now=nil,num= 10)
-    @tag = tag_now.id if tag_now
+    @tag = tag_now if tag_now
     sql = ''
     if tag_now
       sql = "select * from tags where id != #{tag_now.id} order by random() limit #{num-1}"

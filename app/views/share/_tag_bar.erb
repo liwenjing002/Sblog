@@ -1,22 +1,33 @@
 <div class="tags_bar">
   <ul>
-  <%  @tags.each do |tag|%>
-
-
-   <%if tag == @tags.last%>
-    <li class="select">
-  <%= link_to_remote("<span>#{tag.text}</span>",\
-        :update => "main-area",\
-        :url=>{ :controller => "home",
-        :tag=>tag.id,:date=>params[:date]},:class=>"select") %>
-    </li>
-  <%else%>
+<%# 将查询条件时间也作为一个标签放入标签条%>
     <li>
-  <%= link_to_remote("<span>#{tag.text}</span>",\
-        :update => "main-area",\
-        :url=>{ :controller => "home",:tag=>tag.id,:date=>params[:date]}) %>
+      <%= link_to_remote("<span>#{t('all')}</span>",\
+          :update => "main-area",\
+          :url=>{ :controller => "home",:action=>"tag_search",:way=>"recent"}) %>
     </li>
-  <%end%>
-  <%end%>
+    <%if params[:date] %>
+      <li class="select">
+        <%= link_to_remote("<span>#{format_string_date(params[:date])}</span>",\
+            :update => "main-area",:html=>{:class=>"select"},\
+            :url=>{ :controller => "home",:date=>params[:date]}) %>
+      </li>
+    <%end%>
+    <%if @tag %>
+      <li class="select">
+        <%= link_to_remote("<span>#{@tag.text}</span>",\
+            :update => "main-area",:html=>{:class=>"select"},\
+            :url=>{ :controller => "home",
+            :tag=>@tag.id,:date=>params[:date]}) %>
+      </li>
+    <%end%>
+      
+    <%  @tags.each do |tag|%>
+      <li>
+        <%= link_to_remote("<span>#{tag.text}</span>",\
+            :update => "main-area",\
+            :url=>{ :controller => "home",:tag=>tag.id,:date=>params[:date]}) %>
+      </li>
+    <%end%>
   </ul>
 </div> <!-- end .tags -->

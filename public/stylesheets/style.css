@@ -150,6 +150,9 @@ div.tags_bar a { background: url(/images/tag-bg.png) no-repeat top left; display
 div.tags_bar a span { background: url(/images/tag-bg.png) no-repeat bottom right; display: block; height: 28px; padding: 0px 11px 0px 3px; }
 div.tags_bar li.select a span {color: #2279d9;font-size: 15px}
 div.tags_bar a:hover { text-decoration: none; color: #494949; }
+div.tags_bar a.select { background: url(/images/tag-bg_2.png) no-repeat top left;}
+div.tags_bar a.select span { background: url(/images/tag-bg_2.png) no-repeat bottom right;}
+
 
 #breadcrumbs { color: #383738; font-size: 22px; font-family: 'Yanone Kaffeesatz', Arial, sans-serif; text-shadow: 1px 1px 1px #fff; margin-bottom: 34px; }
 #breadcrumbs span.raquo, #breadcrumbs a { color: #a6a6a6; text-shadow: 1px 1px 1px #fff; }
