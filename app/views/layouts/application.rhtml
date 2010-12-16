@@ -8,6 +8,25 @@
     <%= stylesheet_link_tag 'style'%>
     <%= stylesheet_link_tag 'css'%>
     <%= stylesheet_link_tag 'main'%>
+
+    <%if  get_browser_type =="ie6" %>
+    <%# 加载ie6%>
+      <%= stylesheet_link_tag 'ie6style'%>
+      <%= javascript_include_tag 'DD_belatedPNG_0.0.8a-min'%>
+      <script type="text/javascript">
+        DD_belatedPNG.fix('img#logo, p#slogan, #menu,\n\
+       #top-overlay, #featured-overlay, span.overlay,\n\
+       .entry-content p.meta-info, #controllers span#right-arrow,\n\
+       #controllers span#left-arrow, #footer-content, #footer');
+      </script>
+ 
+    <%elsif get_browser_type =="ie7"%>
+      <!-- 加载ie7-->
+     <%= stylesheet_link_tag 'ie7style'%>
+    <%elsif get_browser_type =="ie8"%>
+      <%# 加载ie8%>
+      <%= stylesheet_link_tag 'ie8style'%>
+    <%end%>
     <%= javascript_include_tag 'jquery'%>
     <%= javascript_include_tag 'application'%>
     <%= javascript_include_tag 'truncator'%>

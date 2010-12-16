@@ -118,4 +118,13 @@ module ApplicationHelper
     return text
   end
 
+
+
+  def get_browser_type
+   msg =  request.env["HTTP_USER_AGENT"]
+   return "ie7" if msg.match(/MSIE 7.0/)
+   return "ie8" if msg.match(/MSIE 8.0/)
+   return "ie6" if msg.match(/MSIE 6.0/)
+   return "else"
+  end
 end
