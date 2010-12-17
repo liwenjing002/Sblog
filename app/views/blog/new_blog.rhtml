@@ -48,7 +48,7 @@
               </p>
                <%= ckeditor_textarea("blog", "text",:width => '100%', :height => '500px',:language =>'zh-cn') %>
               <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
-              <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
+              <input  class="register" type="button" value="<%=t "reset"%>" id="reset" onclick="window.location.href='/blog/blog_detail?blog_id=<%= @blog.id %>'"/>
             <% end -%>
           </div> <!-- end #create_new_post -->
 
