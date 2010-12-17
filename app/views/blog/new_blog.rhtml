@@ -1,4 +1,4 @@
-
+<%= javascript_include_tag :ckeditor %>
 <div id="main-area">
 
   <!-- 加载二级分类导航 -->
@@ -46,7 +46,7 @@
                 <label for="et_newpost_content" class="inputlable"><%= t "content" %>:</label>
                 <%= error_div(@blog, :text)%>
               </p>
-              <%= text_area 'blog', 'text' , :class => "mceEditor input" %>
+               <%= ckeditor_textarea("blog", "text",:width => '100%', :height => '500px') %>
               <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
               <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
             <% end -%>

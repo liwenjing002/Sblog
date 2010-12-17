@@ -12,6 +12,7 @@ Rails::Initializer.run do |config|
   config.active_record.schema_format = :sql
   config.logger = Logger.new(STDERR)
   config.action_mailer.raise_delivery_errors = true
+  config.load_paths += %W( #{RAILS_ROOT}/app/models/ckeditor )
 
 end
 require 'delayed_job'
