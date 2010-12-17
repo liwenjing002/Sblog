@@ -1,0 +1,9 @@
+development:
+    access_key_id: "AKIAIQFJQOEKFLWAUE6A"
+    secret_access_key: "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"
+test:
+    access_key_id: "AKIAIQFJQOEKFLWAUE6A"
+    secret_access_key: "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"
+production:
+    access_key_id: "AKIAIQFJQOEKFLWAUE6A"
+    secret_access_key: "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"

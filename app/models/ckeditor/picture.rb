@@ -1,8 +1,9 @@
 class Ckeditor::Picture < Ckeditor::Asset
   has_attached_file :data,
-                    :url  => "/ckeditor_assets/pictures/:id/:style_:basename.:extension",
-                    :path => ":rails_root/public/ckeditor_assets/pictures/:id/:style_:basename.:extension",
-	                  :styles => { :content => '575>', :thumb => '80x80#' }
+  :s3_credentials => "#{Rails.root}/config/s3.yml", :bucket => "picture_lee",
+  :storage => :s3,
+  :path => "Sblog/images/:id/:style_:basename.:extension",
+  :styles => { :content => '575>', :thumb => '100x100' }
 	
 	validates_attachment_size :data, :less_than=>2.megabytes
 	

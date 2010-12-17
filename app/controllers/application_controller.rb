@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  before_filter :set_locale,:is_login,:init_blogs
+  before_filter :set_locale,:is_login
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
@@ -71,13 +71,7 @@ protected
    end
 
 
-#初始化一些博客，由于右边的工具栏，几乎一直存在导致每个页面都需要@blogs对象和时间列表@date_list
-def init_blogs
-  @blogs =Blog.paginate :per_page => 5, :page => 1
 
-   @date_list = Blog.find_by_sql("select to_char(updated_at,'YYYY-MM') as dates \
-                    from blogs  group by dates order by dates asc limit 10")
-end
 
 
 end

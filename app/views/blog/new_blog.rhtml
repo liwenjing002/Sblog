@@ -46,7 +46,7 @@
                 <label for="et_newpost_content" class="inputlable"><%= t "content" %>:</label>
                 <%= error_div(@blog, :text)%>
               </p>
-               <%= ckeditor_textarea("blog", "text",:width => '100%', :height => '500px') %>
+               <%= ckeditor_textarea("blog", "text",:width => '100%', :height => '500px',:language =>'zh-cn') %>
               <input  class="register" type="submit" value="<%=t "submit"%>" id="submit"/>
               <input  class="register" type="button" value="<%=t "reset"%>" id="reset"/>
             <% end -%>

@@ -12,14 +12,14 @@ Rails::Initializer.run do |config|
   config.active_record.schema_format = :sql
   config.logger = Logger.new(STDERR)
   config.action_mailer.raise_delivery_errors = true
-  config.load_paths += %W( #{RAILS_ROOT}/app/models/ckeditor )
+  #config.load_paths += %W( #{RAILS_ROOT}/app/models/ckeditor )
 
 end
 require 'delayed_job'
 require 'will_paginate'
 WillPaginate::ViewHelpers.pagination_options[:previous_label] = I18n.t("previous")
 WillPaginate::ViewHelpers.pagination_options[:next_label] = I18n.t("next")
-require 'tiny_mce'
+
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {

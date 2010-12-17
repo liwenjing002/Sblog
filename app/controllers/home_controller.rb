@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  before_filter :init_blogs
   def index
     type = params[:type]if params[:type] != 'o'
     @blogs = Blog.paginate :per_page => 5, :page => params[:page]||1,
@@ -46,5 +47,11 @@ class HomeController < ApplicationController
     
   end
 
+  #初始化一些博客，由于右边的工具栏，几乎一直存在导致每个页面都需要@blogs对象和时间列表@date_list
+  def init_blogs
+    @blogs =Blog.paginate :per_page => 5, :page => 1
 
+    @date_list = Blog.find_by_sql("select to_char(updated_at,'YYYY-MM') as dates \
+                    from blogs  group by dates order by dates asc limit 10")
+  end
 end
